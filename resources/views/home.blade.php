@@ -109,44 +109,6 @@
                 <img src="{{ url("assets/img/simetria.png") }}" alt="">
             </div>
         </div>
-
-
-
-
-        {{-- <header>
-            <div class="sc-jfJzZe dgjHqK">
-                <div class="sc-fnlXYz gmzLtL">
-                    <div class="logotipo">
-                        <a href="/">
-                            <img src="{{ url('assets/img/logo.png') }}" alt="">
-                        </a>
-                    </div>
-                    <div class="sc-tkKAw iZDSzm">
-                        <button class="sc-cHjxUU eMORyZ">
-                            <div></div>
-                        </button>
-                        <nav class="sc-dRPiIx othOs">
-                            <a aria-current="page" class="sc-hYZPRl bisXXO active" href="/dashboard">Home</a>
-                            <a class="sc-hYZPRl bisXXO" href="">Minha Conta</a>
-                            <a href="" class="sc-hYZPRl bisXXO">Meus Cursos</a>
-                            <a class="btn btn-primary">Planos</a>
-                        </nav>
-                    </div>
-
-                    <div class="sair">
-                        <div class="sc-hFXnzx fjFzkC">
-                            <button class="sc-iuAqxS cwUjYZ">
-                                Sair
-                            </button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </header> --}}
-
-
-
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
