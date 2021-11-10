@@ -4,7 +4,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Mobbin</title>
 
     <!-- Fonts -->
@@ -18,7 +17,103 @@
 
 <body>
     <div id="app">
-        <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="{{ url('assets/img/logo.png') }}" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Minha Conta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Meus Cursos</a>
+                        </li>
+                    </ul>
+                    <button class="btn-planos">Planos</button>
+                    <button class="btn-sair"><img src="{{ url('assets/img/sair.png') }}" alt=""> Sair</button>
+                </div>
+            </div>
+        </nav>
+        <div class="espacamento">
+            <div class="ola">
+                <div class="nome-usuario">
+                    <p>Olá, Luis</p>
+                </div>
+                <div class="anuncio ">
+                    <div class="d-flex item">
+                        <img src="{{ url("assets/img/curso.png") }}" alt="">
+                        <p>CURSO <br> WORDPRESS <br> MOBILE FIRST </p>
+                    </div>
+                    <div class="dois-ponto-zero">
+                        <p>2.0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-template">
+                <div class="card">
+                    <a href="">
+                        <div class="card-image">
+                            <img src="{{ url("assets/img/sprite.png") }}" alt="">
+                        </div>
+                        <div class="frame"></div>
+                        <div class="pagina">
+                            <p>CURSO <br> WORDPRESS</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="">
+                        <div class="card-image">
+                            <img src="{{ url("assets/img/sprite2.png") }}" alt="">
+                        </div>
+                        <div class="frame"></div>
+                        <div class="pagina">
+                            <p>LAYOUTS E <br> TEMPLATES</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="">
+                        <div class="card-image">
+                            <img src="{{ url("assets/img/sprite3.png") }}" alt="">
+                        </div>
+                        <div class="frame"></div>
+                        <div class="pagina">
+                            <p>REVIEW DE <br> PLUGINS</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="">
+                        <div class="card-image">
+                            <img src="{{ url("assets/img/sprite4.png") }}" alt="">
+                        </div>
+                        <div class="frame"></div>
+                        <div class="pagina">
+                            <p>SUPORTE <br> TÉCNICO</p>
+                        </div>  
+                    </a>
+                </div>
+            </div>
+            <div class="text-center mb-5">
+                <img src="{{ url("assets/img/simetria.png") }}" alt="">
+            </div>
+        </div>
+
+
+
+
+        {{-- <header>
             <div class="sc-jfJzZe dgjHqK">
                 <div class="sc-fnlXYz gmzLtL">
                     <div class="logotipo">
@@ -34,13 +129,11 @@
                             <a aria-current="page" class="sc-hYZPRl bisXXO active" href="/dashboard">Home</a>
                             <a class="sc-hYZPRl bisXXO" href="">Minha Conta</a>
                             <a href="" class="sc-hYZPRl bisXXO">Meus Cursos</a>
+                            <a class="btn btn-primary">Planos</a>
                         </nav>
                     </div>
 
                     <div class="sair">
-                        <div class="planos">
-                            <a class="btn btn-primary">Planos</a>
-                        </div>
                         <div class="sc-hFXnzx fjFzkC">
                             <button class="sc-iuAqxS cwUjYZ">
                                 Sair
@@ -50,18 +143,18 @@
 
                 </div>
             </div>
-        </header>
+        </header> --}}
 
 
 
+    </div>
 
-
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-                integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-                integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
-        </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
 </body>
 
 
