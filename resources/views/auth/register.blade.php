@@ -8,7 +8,7 @@
                 </div>
                 <div class="campo-login">
                     <div class="espacamento">
-                        <form action="{{route('register')}}" method="post">
+                        <form id="form-login" action="{{route('register')}}" method="post">
                             @csrf
                             <h1>Crie sua conta</h1>
                             <section>
@@ -121,7 +121,7 @@
                                 <a target="_blank" rel="noopener noreferrer" href=""
                                     class="sc-kRGEVP sc-cNujqI cfYgHF">política de privacidade</a>.
                             </div>
-                            <button type="submit" font-size="16" class="btn-cadastrar">Cadastrar</button>
+                            <button type="button" font-size="16" id="btn-login" class="btn-cadastrar">Cadastrar</button>
                         </form>
                     </div>
                 </div>

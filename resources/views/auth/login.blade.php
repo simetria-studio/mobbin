@@ -14,7 +14,8 @@
                 </div>
                 <div class="campo-login">
                     <div class="espacamento">
-                        <form>
+                        <form id="form-login"  action="{{route('login')}}" method="post">
+                            @csrf
                             <section>
                                 <div class="email mb-2">
                                     <svg stroke="currentColor" fill="currentColor" stroke-width="0"
@@ -48,7 +49,7 @@
                                 </div>
                             </section>
                             <a class="forgot" href="">Esqueci minha senha</a>
-                            <button class="btn-entrar mt-3" type="submit" font-size="16">Entrar</button>
+                            <button class="btn-entrar mt-3" type="button" id="btn-login" font-size="16">Entrar</button>
                             <div class="naotem">
                                 Não tem uma conta?&nbsp;<a href="{{route('register')}}">Registre-se</a>
                             </div>

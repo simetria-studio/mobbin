@@ -4,6 +4,9 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
@@ -21,11 +24,10 @@ class LoginController extends Controller
         if($authValid){
             if (Auth::guard('web')->attempt(['email' => $request->email, 'password' => $request->password],$remember)) {
 
-                // return response()->json(route('conta'), 200);
-                return redirect()->route('conta');
+                return response()->json(route('conta'), 200);
             }
         }else{
-            // return response()->json(['invalid' => 'Email ou Senha invalidos'], 422);
+            return response()->json(['invalid' => 'Email ou Senha invalidos'], 422);
         }
     }
 
