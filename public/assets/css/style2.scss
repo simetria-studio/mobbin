@@ -211,6 +211,8 @@ nav .navbar-nav > .nav-item > .nav-link {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 3%;
+        grid-template-rows: 1fr;
+        margin-bottom: 150px;
         .card {
             margin-bottom: 30px;
             height: 404px;
