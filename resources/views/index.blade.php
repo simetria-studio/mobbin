@@ -20,7 +20,9 @@
     <div class="container">
         <div class="mobbin">
             <div class="logo">
-                <img src="{{ url('assets/img/logo.png') }}" alt="">
+                <div class="logotipo">
+                    <img src="{{ url('assets/img/logo.png') }}" alt="">
+                </div>
                 <div class="registre">
                     Não tem cadastro?&nbsp; <br><a href="">Registrar-se</a>
                 </div>

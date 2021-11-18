@@ -130,7 +130,9 @@
                 </div>
             </div>
             <div class="logo">
-                <img src="{{ url('assets/img/logo.png') }}" alt="">
+                <div class="logotipo">
+                    <img src="{{ url('assets/img/logo.png') }}" alt="">
+                </div>
                 <div class="registre">
                     Voltar para&nbsp; <br><a href="{{route('login')}}">Login</a>
                 </div>

@@ -284,3 +284,9 @@ form > .btn-cadastrar {
         color: #ccc;
     }
 }
+
+@media only screen and (max-width: 425px) {
+    .logo {
+    order: -1;
+    }
+}
