@@ -47,16 +47,14 @@
         <div class="espacamento">
             <div class="ola">
                 <div class="nome-usuario">
-                    <p>Olá, {{ auth()->user()->name }}</p>
+                 <img class="img-0" src="{{ url('assets/img/hi-mobbin-150x150.png') }}" alt="">   <p><span style="color: rgb(79, 217, 214);">Olá</span>, {{ auth()->user()->name }}</p>
                 </div>
                 <div class="anuncio ">
                     <div class="d-flex item">
-                        <img src="{{ url("assets/img/curso.png") }}" alt="">
-                        <p>CURSO <br> WORDPRESS <br> MOBILE FIRST </p>
+                        <img src="{{ url("assets/img/banner-black_friday-desktop-1024x153.png") }}" alt="">
+
                     </div>
-                    <div class="dois-ponto-zero">
-                        <p>2.0</p>
-                    </div>
+
                 </div>
             </div>
             <div class="grid-template">
