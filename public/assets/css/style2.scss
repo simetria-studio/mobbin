@@ -162,7 +162,9 @@ nav .navbar-nav > .nav-item > .nav-link {
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 3%;
+    grid-gap: 6%;
+    padding: 0 45px;
+
     .card {
         margin-bottom: 30px;
         height: 404px;

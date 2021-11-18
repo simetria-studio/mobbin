@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\PainelController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,3 +29,7 @@ Route::get('minha-conta', [PerfilController::class, 'conta'])->name('conta');
 Route::get('/', function () {
     return view('home');
 })->name('home')->middleware('auth');
+
+
+
+Route::get('admin', [PainelController::class, 'index']);
