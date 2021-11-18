@@ -213,7 +213,7 @@ nav .navbar-nav > .nav-item > .nav-link {
         grid-gap: 3%;
     }
 
-    .ola{
+    .ola {
         grid-template-columns: 1fr;
         padding: 0 3%;
 
@@ -227,6 +227,38 @@ nav .navbar-nav > .nav-item > .nav-link {
                 font-style: normal;
                 font-weight: 900;
                 line-height: 30px;
+            }
+        }
+        .anuncio {
+            .dois-ponto-zero {
+                p {
+                    padding-left: 50px;
+                    font-family: Barlow Semi Condensed;
+                    font-size: 4em;
+                    padding: 0 5px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: 75px;
+                    color: #ffa800;
+                }
+            }
+            .item {
+                display: flex;
+                align-items: center;
+                img {
+                    width: 100%;
+                    max-width: 102px;
+                    height: 102px;
+                }
+                p {
+                    padding: 0 10px;
+                    color: #ccc;
+                    font-family: Barlow Semi Condensed;
+                    font-size: 2em;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: 23px;
+                }
             }
         }
     }
