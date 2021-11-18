@@ -47,7 +47,7 @@
         <div class="espacamento">
             <div class="ola">
                 <div class="nome-usuario">
-                    <p>Olá, Luis</p>
+                    <p>Olá, {{ auth()->user()->name }}</p>
                 </div>
                 <div class="anuncio ">
                     <div class="d-flex item">
@@ -101,7 +101,7 @@
                         <div class="frame"></div>
                         <div class="pagina">
                             <p>SUPORTE <br> TÉCNICO</p>
-                        </div>  
+                        </div>
                     </a>
                 </div>
             </div>

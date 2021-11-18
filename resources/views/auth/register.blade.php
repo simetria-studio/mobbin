@@ -97,7 +97,7 @@
                             </section>
                             <div class="sc-chCrNI Doxm">
                                 <div>
-                                    <div>
+                                    {{-- <div>
                                         <div style="width: 304px; height: 78px;">
                                             <div>
                                                 <iframe title="reCAPTCHA"
@@ -112,7 +112,7 @@
                                             </textarea>
                                         </div>
                                         <iframe style="display: none;"></iframe>
-                                    </div>
+                                    </div> --}}
                                 </div>
                             </div>
                             <div class="sc-kwWFPY PcCxl">Ao se registrar, você aceita nossos&nbsp;

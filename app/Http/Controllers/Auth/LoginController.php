@@ -20,11 +20,11 @@ class LoginController extends Controller
         $remember = $request->remember ? true : false;
 
         $authValid = Auth::guard('web')->validate(['email' => $request->email, 'password' => $request->password]);
-        
+
         if($authValid){
             if (Auth::guard('web')->attempt(['email' => $request->email, 'password' => $request->password],$remember)) {
 
-                return response()->json(route('conta'), 200);
+                return response()->json(route('home'), 200);
             }
         }else{
             return response()->json(['invalid' => 'Email ou Senha invalidos'], 422);

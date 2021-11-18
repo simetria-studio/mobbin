@@ -44,7 +44,7 @@ class RegisterController extends Controller
 
         if (Auth::guard('web')->attempt(['email' => $request->email, 'password' => $request->password])) {
 
-            return response()->json(route('conta'), 200);
+            return response()->json(route('home'), 200);
         }
     }
 }

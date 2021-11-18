@@ -5,7 +5,7 @@
             <div class="logo">
                 <img src="{{ url('assets/img/logo.png') }}" alt="">
                 <div class="registre">
-                    Não tem cadastro?&nbsp; <br><a href="">Registrar-se</a>
+                    Não tem cadastro?&nbsp; <br><a href="{{ url('registro') }}">Registrar-se</a>
                 </div>
             </div>
             <div class="login">
@@ -51,7 +51,7 @@
                             <a class="forgot" href="">Esqueci minha senha</a>
                             <button class="btn-entrar mt-3" type="button" id="btn-login" font-size="16">Entrar</button>
                             <div class="naotem">
-                                Não tem uma conta?&nbsp;<a href="{{route('register')}}">Registre-se</a>
+                                Não tem uma conta?&nbsp;<a href="{{ url('registro') }}">Registre-se</a>
                             </div>
                             <div class="sc-eYErCu bSLbKf"></div>
                         </form>

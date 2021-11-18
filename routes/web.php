@@ -23,12 +23,8 @@ Route::get('/registro',  [RegisterController::class, 'index'])->name('register')
 Route::post('/registro',  [RegisterController::class, 'register'])->name('register');
 
 Route::get('minha-conta', [PerfilController::class, 'conta'])->name('conta');
+
+
 Route::get('/', function () {
-    return view('index');
-});
-Route::get('/1', function () {
-    return view('index2');
-});
-Route::get('/2', function () {
     return view('home');
-});
+})->name('home')->middleware('auth');
