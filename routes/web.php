@@ -16,7 +16,7 @@ use App\Http\Controllers\Auth\RegisterController;
 |
 */
 
-Route::post('/logout',  [LoginController::class, 'logout'])->name('logout');
+Route::any('/logout',  [LoginController::class, 'logout'])->name('logout');
 Route::get('/login',  [LoginController::class, 'index'])->name('login');
 Route::post('/login',  [LoginController::class, 'login'])->name('login');
 Route::get('/registro',  [RegisterController::class, 'index'])->name('register');

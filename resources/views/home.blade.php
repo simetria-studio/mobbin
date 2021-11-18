@@ -40,7 +40,7 @@
                         </li>
                     </ul>
                     <button class="btn-planos">Planos</button>
-                    <button class="btn-sair"><img src="{{ url('assets/img/sair.png') }}" alt=""> Sair</button>
+                    <a href="{{ route('logout') }}"><button class="btn-sair"><img src="{{ url('assets/img/sair.png') }}" alt=""> Sair</button></a>
                 </div>
             </div>
         </nav>
