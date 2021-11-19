@@ -10,4 +10,9 @@ class PainelController extends Controller
     {
         return view('painel.pages.index');
     }
+
+    public function layouts()
+    {
+        return view('painel.pages.layouts');
+    }
 }

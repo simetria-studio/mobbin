@@ -33,3 +33,5 @@ Route::get('/', function () {
 
 
 Route::get('admin', [PainelController::class, 'index']);
+
+Route::get('layouts', [PainelController::class, 'layouts']);
