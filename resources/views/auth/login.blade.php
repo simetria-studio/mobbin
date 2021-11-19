@@ -39,7 +39,7 @@
                                     </svg>
                                     <input name="password" type="password" id="password" aria-label="password"
                                         placeholder="Senha" autocomplete="off">
-                                    <a class="zoio" tabindex="-1">
+                                    <a class="zoio" tabindex="-1" id="zoio">
                                         <svg stroke="currentColor" fill="currentColor" stroke-width="0"
                                             viewBox="0 0 24 24" height="1em" width="1em"
                                             xmlns="http://www.w3.org/2000/svg">

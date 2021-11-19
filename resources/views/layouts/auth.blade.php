@@ -34,7 +34,7 @@
         </script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
-
+        <script src="{{ url('assets/js/script.js') }}"></script>
         <script>
             $(document).ready(function(){
                 $('#form-login').find('input').on('keyup', function (e) {
