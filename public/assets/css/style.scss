@@ -12,11 +12,15 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
 }
 .logo {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    max-width: 480px;
     width: 100%;
+    .logotipo {
+        display: flex;
+        justify-content: center;
+        img {
+            width: 480px;
+        }
+    }
+
     .registre {
         margin-top: 20px;
         font-family: Barlow Semi Condensed;
@@ -267,5 +271,27 @@ input {
     color: #ccc;
     svg {
         color: #ccc;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .logo {
+        .logotipo {
+            margin-top: 40px;
+            img {
+                width: 261px;
+            }
+        }
+    }
+    .registre {
+        display: none;
+    }
+    .campo-login {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .campo-login {
+        width: 97%;
     }
 }

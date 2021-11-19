@@ -45,6 +45,9 @@
             </div>
         </nav>
         <div class="espacamento">
+            <div class="text-center mt-5 d-lg-none">
+                <button class="btn-planos">AREA VIP</button>
+            </div>
             <div class="ola">
                 <div class="nome-usuario">
                  <img class="img-0" src="{{ url('assets/img/hi-mobbin-150x150.png') }}" alt="">   <p><span style="color: rgb(79, 217, 214);">Olá</span>, {{ auth()->user()->name }}</p>
@@ -52,9 +55,7 @@
                 <div class="anuncio ">
                     <div class="d-flex item">
                         <img src="{{ url("assets/img/banner-black_friday-desktop-1024x153.png") }}" alt="">
-
                     </div>
-
                 </div>
             </div>
             <div class="grid-template">
