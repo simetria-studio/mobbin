@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\PainelController;
+use App\Http\Controllers\SiteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,12 +27,11 @@ Route::post('/registro',  [RegisterController::class, 'register'])->name('regist
 Route::get('minha-conta', [PerfilController::class, 'conta'])->name('conta');
 
 
-Route::get('/', function () {
-    return view('home');
-})->name('home')->middleware('auth');
+Route::get('/', [SiteController::class, 'index'])->name('home')->middleware('auth');
+Route::get('/layouts', [SiteController::class, 'layouts'])->name('layouts')->middleware('auth');
 
 
 
 Route::get('admin', [PainelController::class, 'index']);
 
-Route::get('layouts', [PainelController::class, 'layouts']);
+Route::get('admin/layouts', [PainelController::class, 'layouts']);
