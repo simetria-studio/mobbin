@@ -59,9 +59,4 @@
             </a>
         </div>
     </div>
-    <div class="text-center mb-5">
-        <img src="{{ url('assets/img/simetria.png') }}" alt="">
-    </div>
-    </div>
-
 @endsection

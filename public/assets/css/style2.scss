@@ -36,7 +36,11 @@ button {
 a {
     text-decoration: none;
 }
-
+.navbar {
+    background: transparent;
+    height: 100px;
+    width: 100%;
+}
 nav .navbar-brand {
     width: 252px;
     height: 55px;
@@ -58,51 +62,76 @@ nav .navbar-nav > .nav-item {
 nav .navbar-nav > .nav-item > .nav-link {
     margin: 10px;
 }
+footer {
+    margin-top: 100px;
+
+    .footer-logo {
+        .img-footer {
+            text-align: center;
+            display: inline-block;
+        }
+        img {
+            display: inline-block;
+            vertical-align: middle;
+            max-width: 39%;
+            height: auto;
+        }
+        .btn-politicas {
+            margin-top: 20px;
+            display: inline-block;
+            background-color: #414742;
+            color: #fff;
+            fill: #fff;
+            border-radius: 3px;
+            font-size: 15px;
+            transition: all 0.3s;
+            padding: 12px 24px;
+            line-height: 1;
+        }
+    }
+}
 .btn-planos {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #000000;
+    color: #202024;
+    border: solid 3px #fac51c;
+    padding: 10px 50px 10px 50px;
     background: #fac51c;
-    border: #fac51c 1px solid;
-    border-radius: 12px;
-    width: 100%;
-    max-width: 154px;
-    height: 44px;
-    font-family: Barlow;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 18px;
+    font-size: 14px;
+    font-weight: 800;
     outline: none;
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+    position: relative;
 }
 .btn-planos:hover {
-    outline: none !important;
-    background-color: #121214;
-    color: #fac51c;
+    border: 3px solid #fefefe;
+    color: #202024;
+    background: #fefefe;
 }
-.btn-planos:focus {
-    outline: none;
-}
+
 .collapse {
     display: flex;
     justify-content: space-around;
 
     .btn-sair {
-        background-color: transparent;
+        display: inline-block;
+        box-shadow: none;
+        text-decoration: none;
         border: none;
-        font-family: Barlow Condensed;
-        font-size: 29px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: 34px;
-        letter-spacing: 0em;
         text-align: center;
         color: #ccc;
+        img{
+            vertical-align: middle;
+            display: inline-block;
+            height: auto;
+            max-width: 100%;
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+        }
     }
-}
-.espacamento {
-    margin: 0 4%;
 }
 .ola {
     margin-top: 5%;

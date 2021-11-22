@@ -19,16 +19,12 @@
 
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="{{ route('home') }}">
                     <img src="{{ url('assets/img/logo.png') }}" alt="">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -41,26 +37,49 @@
                             <a class="nav-link" href="#">Meus Cursos</a>
                         </li>
                     </ul>
+<<<<<<< HEAD
                     <a href="{{ url('/vip') }}" class="btn-planos">AREA VIP</a>
                     <a href="{{ route('logout') }}"><button class="btn-sair"><img
                                 src="{{ url('assets/img/sair.png') }}" alt=""> Sair</button></a>
+=======
+                <a href="/vip" class="btn-planos">AREA VIP</a>
+
+                    <div class=" logout">
+                        <a href="{{ route('logout') }}" class="btn-sair">
+                            <img width="79" height="34" src="{{ url('assets/img/sair.png') }}" alt="">
+                        </a>
+                    </div>
+>>>>>>> main
                 </div>
             </div>
         </nav>
-        <div class="espacamento">
+        <div>
             {{-- <div class="text-center mt-5 d-lg-none">
                 <button class="btn-planos">AREA VIP</button>
-<<<<<<< Updated upstream
-            </div>
-
-=======
             </div> --}}
+<<<<<<< HEAD
 
 
             @yield('content')
         </div>
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
         <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+=======
+            @yield('content')
+        </div>
+        <footer class="text-center mb-5">
+            <div class="text-center footer-logo">
+                <a class="img-footer" href="https://simetria.studio/" target="_blank" loading="lazy">
+                    <img src="{{ url('assets/img/footer-logo.png') }}" alt="">
+                </a>
+                <div class="text-center politicas">
+                    <a href="" class="btn-politicas">POLÍTICAS</a>
+                </div>
+            </div>
+        </footer>
+
+
+>>>>>>> main
         <script src="https://kit.fontawesome.com/e67788a73f.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
                 integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
