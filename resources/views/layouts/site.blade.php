@@ -39,8 +39,8 @@
                     </ul>
 
                     <a href="{{ url('/vip') }}" class="btn-planos">AREA VIP</a>
-                    <a href="{{ route('logout') }}"><button class="btn-sair"><img
-                                src="{{ url('assets/img/sair.png') }}" alt=""> Sair</button></a>
+                    <a href="{{ route('logout') }}" class="btn-sair"><img
+                            src="{{ url('assets/img/sair.png') }}" alt=""></a>
 
                 </div>
             </div>
