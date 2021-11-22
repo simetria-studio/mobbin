@@ -136,7 +136,7 @@
                             <h2>JA TE CONVECEMOS?</h2>
                         </div>
                     </div>
-                    <div class="elemento-3">
+                    <div class="elemento-3 mb-5">
                         <div class="accordion" id="accordionExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingOne">
