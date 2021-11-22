@@ -59,6 +59,10 @@ nav .navbar-nav > .nav-item > .nav-link {
     margin: 10px;
 }
 .btn-planos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
     background: #fac51c;
     border: #fac51c 1px solid;
     border-radius: 12px;
@@ -108,7 +112,7 @@ nav .navbar-nav > .nav-item > .nav-link {
     .nome-usuario {
         display: flex;
         align-items: center;
-        .img-0{
+        .img-0 {
             width: 115px;
             padding: 0 25px;
         }
@@ -187,7 +191,11 @@ nav .navbar-nav > .nav-item > .nav-link {
             position: absolute;
             width: 100%;
             height: 404px;
-            background: linear-gradient(0deg, rgba(18, 18, 20, 0.85) 14.95%, rgba(0, 0, 0, 0.102) 69.66%);
+            background: linear-gradient(
+                0deg,
+                rgba(18, 18, 20, 0.85) 14.95%,
+                rgba(0, 0, 0, 0.102) 69.66%
+            );
             border-radius: 20px;
         }
         .pagina {
@@ -242,7 +250,11 @@ nav .navbar-nav > .nav-item > .nav-link {
                 position: absolute;
                 width: 100%;
                 height: 404px;
-                background: linear-gradient(0deg, rgba(18, 18, 20, 0.85) 14.95%, rgba(0, 0, 0, 0.102) 69.66%);
+                background: linear-gradient(
+                    0deg,
+                    rgba(18, 18, 20, 0.85) 14.95%,
+                    rgba(0, 0, 0, 0.102) 69.66%
+                );
                 border-radius: 20px;
             }
             .pagina {
@@ -319,13 +331,12 @@ nav .navbar-nav > .nav-item > .nav-link {
     }
 }
 
-
-@media only screen and (max-width: 425px){
-    .grid-template{
+@media only screen and (max-width: 425px) {
+    .grid-template {
         margin-top: 130px;
     }
-    .anuncio{
-        .item{
+    .anuncio {
+        .item {
             margin-top: 30px;
             margin-bottom: 50px;
         }
@@ -340,11 +351,10 @@ nav .navbar-nav > .nav-item > .nav-link {
     .collapse .btn-planos {
         display: none;
     }
-    .collapse{
+    .collapse {
         display: block;
-        .btn-sair{
+        .btn-sair {
             margin-bottom: 20px;
         }
     }
 }
-

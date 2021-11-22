@@ -13,6 +13,7 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ url('assets/css/style2.min.css') }}">
+    <link rel="stylesheet" href="{{ url('assets/css/vip.min.css') }}">
 </head>
 
 <body>
@@ -39,20 +40,25 @@
                             <a class="nav-link" href="#">Meus Cursos</a>
                         </li>
                     </ul>
-                    <button class="btn-planos">AREA VIP</button>
+                    <a href="/vip" class="btn-planos">AREA VIP</a>
                     <a href="{{ route('logout') }}"><button class="btn-sair"><img
                                 src="{{ url('assets/img/sair.png') }}" alt=""> Sair</button></a>
                 </div>
             </div>
         </nav>
         <div class="espacamento">
-            <div class="text-center mt-5 d-lg-none">
+            {{-- <div class="text-center mt-5 d-lg-none">
                 <button class="btn-planos">AREA VIP</button>
+<<<<<<< Updated upstream
             </div>
 
+=======
+            </div> --}}
+   
+>>>>>>> Stashed changes
             @yield('content')
         </div>
-
+        <script src="https://kit.fontawesome.com/e67788a73f.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
                 integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
         </script>

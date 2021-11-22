@@ -41,3 +41,9 @@ Route::get('/layouts', [SiteController::class, 'layouts'])->name('layouts')->mid
 Route::get('admin', [PainelController::class, 'index']);
 
 Route::get('admin/layouts', [PainelController::class, 'layouts']);
+
+
+Route::get('/vip', function () {
+
+    return view('site.vip');
+});
