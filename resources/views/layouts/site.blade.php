@@ -12,6 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    {{-- <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css"> --}}
     <link rel="stylesheet" href="{{ url('assets/css/style2.min.css') }}">
     <link rel="stylesheet" href="{{ url('assets/css/vip.min.css') }}">
 </head>
@@ -40,7 +41,7 @@
                             <a class="nav-link" href="#">Meus Cursos</a>
                         </li>
                     </ul>
-                    <a href="/vip" class="btn-planos">AREA VIP</a>
+                    <a href="{{ url('/vip') }}" class="btn-planos">AREA VIP</a>
                     <a href="{{ route('logout') }}"><button class="btn-sair"><img
                                 src="{{ url('assets/img/sair.png') }}" alt=""> Sair</button></a>
                 </div>
@@ -54,16 +55,62 @@
 
 =======
             </div> --}}
-   
->>>>>>> Stashed changes
+
+
             @yield('content')
         </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
         <script src="https://kit.fontawesome.com/e67788a73f.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
                 integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
         </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
                 integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+        </script>
+        <script>
+            setListeners();
+
+            function setListeners() {
+                let menus = document.querySelectorAll(".clps-button");
+                for (let i = 0; i < menus.length; i++) {
+                    menus.item(i).addEventListener("click", collapseToggle);
+                }
+            }
+
+            function collapseToggle(evt) {
+                if (evt.target.closest(".clps-menu").classList.contains("collapsed")) {
+                    foldRecursively(evt.target.closest(".collapsed"));
+                } else {
+                    let collapsedSiblings = evt.target.closest(".clps-menu").parentNode.querySelector(".collapsed");
+                    if (collapsedSiblings) {
+                        foldRecursively(collapsedSiblings);
+                    }
+                    collapseElement(evt.target)
+                }
+            }
+
+            function collapseElement(element) {
+                let section = element.closest(".clps-menu").querySelector("ul");
+                let numberBehind;
+                let sectionHeight = section.scrollHeight;
+                document.documentElement.style.setProperty(`--height-of-${element.closest(".clps-menu").classList[1]}`,
+                    sectionHeight + "px");
+                element.closest(".clps-menu").classList.add("collapsed");
+            }
+
+            function foldElement(element) {
+                element.closest(".clps-menu").classList.remove("collapsed");
+                document.documentElement.style.setProperty(`--height-of-${element.closest(".clps-menu").classList[1]}`, 0 +
+                    "px");
+            }
+
+            function foldRecursively(element) {
+                foldElement(element);
+                if (element.querySelector(".collapsed")) {
+                    foldRecursively(element.querySelector(".collapsed"));
+                }
+            }
         </script>
         <script src="{{ url('assets/js/script.js') }}"></script>
 </body>
