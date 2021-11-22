@@ -50,7 +50,7 @@
                                     </a>
                                 </div>
                             </section>
-                            <a class="forgot" href="">Esqueci minha senha</a>
+                            <a class="forgot" href="{{ route('forget.password.get') }}">Esqueci minha senha</a>
                             <button class="btn-entrar mt-3" type="button" id="btn-login" font-size="16">Entrar</button>
                             <div class="naotem">
                                 Não tem uma conta?&nbsp;<a href="{{ url('registro') }}">Registre-se</a>
