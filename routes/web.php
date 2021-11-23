@@ -48,4 +48,4 @@ Route::post('webhook', [NotifyController::class, 'webhook']);
 Route::get('/vip', function () {
 
     return view('site.vip');
-});
+})->middleware('auth');
