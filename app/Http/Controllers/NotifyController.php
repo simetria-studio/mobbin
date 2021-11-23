@@ -30,6 +30,7 @@ class NotifyController extends Controller
         }
 
         $user = User::where('email', $order['Customer']['email']);
+        \Log::info($user->get());
         $user->update([
             'order_id' => $order['order_id'],
             'permission' => $order['order_status'] == 'paid' ? 5 : 0,
