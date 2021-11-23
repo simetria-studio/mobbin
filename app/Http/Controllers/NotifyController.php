@@ -20,7 +20,7 @@ class NotifyController extends Controller
         $calculatedSignature = hash_hmac('sha1', json_encode($order), $secret_key);
 
 
-        \Log::info($payload, json_encode($calculatedSignature));
+        \Log::info(json_encode($payload));
 
         if ($signature !== $calculatedSignature) {
             http_response_code(400);
