@@ -19,38 +19,65 @@
 
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="{{ route('home') }}">
-                    <img src="{{ url('assets/img/logo.png') }}" alt="">
-                </a>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Minha Conta</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Meus Cursos</a>
-                        </li>
-                    </ul>
-
-                    <a href="{{ url('/vip') }}" class="btn-planos">AREA VIP</a>
-                    <a href="{{ route('logout') }}" class="btn-sair"><img
-                            src="{{ url('assets/img/sair.png') }}" alt=""></a>
-
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="{{ route('home') }}">
+                        <img src="{{ url('assets/img/logo.png') }}" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 my-auto ">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Para você
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Cursos WordPress</a></li>
+                                    <li><a class="dropdown-item" href="#">Review de Plugins</a></li>
+                                    <li><a class="dropdown-item" href="#">Templates e Layouts</a></li>
+                                    <li><a class="dropdown-item" href="#">Suporte Técnicos</a></li>
+                                    <li><a class="dropdown-item" href="#">Politicas</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Minha Conta</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Meus Cursos</a>
+                            </li>
+                            <li class="nav-item d-md-none">
+                                <a href="{{ route('logout') }}" class="nav-item btn-sair">Sair</a>
+                            </li>
+                        </ul>
+                        <div class="action d-none d-md-flex ">
+                            <div>
+                                <a href="{{ url('/vip') }}" class="btn-planos">AREA VIP</a>
+                            </div>
+                            <div>
+                                <a href="{{ route('logout') }}" class="btn-sair"><img
+                                        src="{{ url('assets/img/sair.png') }}" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </nav>
-        <div>
-            {{-- <div class="text-center mt-5 d-lg-none">
+            </nav>
+        </header>
+
+
+        {{-- <div class="text-center mt-5 d-lg-none">
                 <button class="btn-planos">AREA VIP</button>
             </div> --}}
 
-
+        <div>
 
             @yield('content')
         </div>
