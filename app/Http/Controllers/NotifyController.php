@@ -22,12 +22,12 @@ class NotifyController extends Controller
 
         \Log::info([$order['order_id'], $order['order_status'], $order['Customer']['email']]);
 
-        if ($signature !== $calculatedSignature) {
-            http_response_code(400);
-            header('Content-Type: application/json');
-            echo json_encode(['error' => 'Incorrect signature']);
-            exit();
-        }
+        // if ($signature !== $calculatedSignature) {
+        //     http_response_code(400);
+        //     header('Content-Type: application/json');
+        //     echo json_encode(['error' => 'Incorrect signature']);
+        //     exit();
+        // }
 
         $user = User::where('email', $order['Customer']['email']);
         \Log::info($user->get());
