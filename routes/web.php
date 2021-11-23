@@ -7,6 +7,7 @@ use App\Http\Controllers\PainelController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\ForgotPasswordController;
+use App\Http\Controllers\NotifyController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,6 +43,7 @@ Route::get('admin', [PainelController::class, 'index']);
 
 Route::get('admin/layouts', [PainelController::class, 'layouts']);
 
+Route::post('webhook', [NotifyController::class, 'webhook']);
 
 Route::get('/vip', function () {
 
