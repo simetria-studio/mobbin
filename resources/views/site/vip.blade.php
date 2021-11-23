@@ -66,7 +66,7 @@
                                     ajudando você a lidar com seu bloqueio criativo e agilizar a entrega de seus projetos.
                                 </p>
                                 <div class="d-md-none q-vip d-lg-block mt-5">
-                                  <a href="https://pay.kiwify.com.br/yeGkikJ"> <button class="btn-sou-vip">QUERO SER VIP</button></a> 
+                                  <a href="https://pay.kiwify.com.br/yeGkikJ" target="_blank"> <button class="btn-sou-vip">QUERO SER VIP</button></a>
                                 </div>
                             </div>
                         </div>
@@ -98,7 +98,7 @@
                                     Todos os layouts e cursos são originais produzidos do zero pela nossa equipe.
                                 </p>
                                 <div class="d-md-none q-vip d-lg-block mt-5">
-                                   <a href="https://pay.kiwify.com.br/yeGkikJ"><button class="btn-sou-vip">QUERO SER VIP</button></a>
+                                   <a href="https://pay.kiwify.com.br/yeGkikJ" target="_blank"><button class="btn-sou-vip">QUERO SER VIP</button></a>
                                 </div>
                             </div>
                         </div>
@@ -129,7 +129,7 @@
                                     seu conhecimento inicial.
                                 </p>
                                 <div class="d-md-none q-vip d-lg-block mt-5">
-                                   <a href="https://pay.kiwify.com.br/yeGkikJ"> <button class="btn-sou-vip">QUERO SER VIP</button></a>
+                                   <a href="https://pay.kiwify.com.br/yeGkikJ" target="_blank"> <button class="btn-sou-vip">QUERO SER VIP</button></a>
                                 </div>
                             </div>
                         </div>
@@ -349,7 +349,7 @@
 
 
                             <div class="text-center d-md-none d-lg-block mt-5 ">
-                              <a href="https://pay.kiwify.com.br/yeGkikJ">  <button class="btn-sou-vip ">QUERO SER VIP</button></a>
+                              <a href="https://pay.kiwify.com.br/yeGkikJ" target="_blank">  <button class="btn-sou-vip ">QUERO SER VIP</button></a>
                             </div>
 
                         </div>
