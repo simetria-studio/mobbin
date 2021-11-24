@@ -45,7 +45,12 @@ Route::get('admin/layouts', [PainelController::class, 'layouts']);
 
 Route::post('webhook', [NotifyController::class, 'webhook']);
 
+
 Route::get('/vip', function () {
 
     return view('site.vip');
 })->middleware('auth');
+
+Route::get('/politicas', function () {
+    return view('site.politicas');
+});

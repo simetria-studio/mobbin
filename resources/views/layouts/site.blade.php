@@ -20,7 +20,7 @@
 <body>
     <div id="app">
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-dark ">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="{{ route('home') }}">
                         <img src="{{ url('assets/img/logo.png') }}" alt="">
@@ -45,7 +45,7 @@
                                     <li><a class="dropdown-item" href="#">Review de Plugins</a></li>
                                     <li><a class="dropdown-item" href="#">Templates e Layouts</a></li>
                                     <li><a class="dropdown-item" href="#">Suporte Técnicos</a></li>
-                                    <li><a class="dropdown-item" href="#">Politicas</a></li>
+                                    <li><a class="dropdown-item" href="/politicas">Politicas</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -71,12 +71,6 @@
                 </div>
             </nav>
         </header>
-
-
-        {{-- <div class="text-center mt-5 d-lg-none">
-                <button class="btn-planos">AREA VIP</button>
-            </div> --}}
-
         <div>
 
             @yield('content')
@@ -88,7 +82,7 @@
                     <img src="{{ url('assets/img/footer-logo.png') }}" alt="">
                 </a>
                 <div class="text-center politicas">
-                    <a href="" class="btn-politicas">POLÍTICAS</a>
+                    <a href="/politicas" class="btn-politicas">POLÍTICAS</a>
                 </div>
             </div>
         </footer>

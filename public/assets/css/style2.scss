@@ -1,3 +1,5 @@
+@import "animate";
+@import "politicas";
 * {
     padding: 0;
     margin: 0;
@@ -42,14 +44,14 @@ header {
         ul li {
             margin-left: 20px;
         }
-        li ul{
+        li ul {
             margin: 0;
         }
-        li ul li{
+        li ul li {
             margin: 0;
             width: 100%;
-        }   
-        li ul li a:hover{
+        }
+        li ul li a:hover {
             background-color: #55595c !important;
         }
         ul li a {
@@ -257,6 +259,9 @@ footer {
     }
 }
 @media only screen and (max-width: 600px) {
+    nav ul {
+        text-align: center;
+    }
     .grid-template {
         margin-top: 50px;
         display: grid;
@@ -313,6 +318,7 @@ footer {
                 }
             }
         }
+
     }
 
     .ola {
