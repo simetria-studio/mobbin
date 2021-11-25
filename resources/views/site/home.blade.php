@@ -1,7 +1,7 @@
 @extends('layouts.site')
 
 @section('content')
-    <div class="ola">
+    <div class="ola container">
         <div class="nome-usuario">
             <img class="img-0" src="{{ url('assets/img/hi-mobbin-150x150.png') }}" alt="">
             <p><span style="color: rgb(79, 217, 214);">Olá</span>, {{ auth()->user()->name }}</p>
@@ -13,7 +13,7 @@
         </div>
     </div>
 
-    <div class="grid-template">
+    <div class="grid-template ">
         <div class="card">
             <a href="">
                 <div class="card-image">
