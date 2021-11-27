@@ -19,60 +19,52 @@
 
 <body>
     <div id="app">
-        <div class="container">
-            <header>
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="{{ route('home') }}">
-                            <img src="{{ url('assets/img/logo.png') }}" alt="">
+        <header>
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark  ">
+                    <a class="navbar-brand" href="{{ route('home') }}">
+                        <img src="{{ url('assets/img/newlogo.png') }}" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse d-xl-flex  justify-content-sm-center " id="navbarSupportedContent">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Jobs</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Marketplace</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Suporte</a>
+                            </li>
+                            <li class="nav-item d-md-none mb-4 mt-2">
+                                <a href="{{ route('logout') }}" class="nav-item btn-sair">Sair</a>
+                            </li>
+                        </ul>
+                        {{-- <div class="action d-none d-md-flex "></div> --}}
+                    </div>
+
+                    <div class="d-none d-xl-flex">
+                        <a href="{{ url('/vip') }}" class="btn-vip" type="button">VIP</a>
+                    </div>
+                    <div class="perfil d-none d-md-flex">
+                        <a href="" type="button">
+                            <img src="{{ url('assets/img/avatar.jpg') }}" alt="">
                         </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 my-auto ">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Para você
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="#">Cursos WordPress</a></li>
-                                        <li><a class="dropdown-item" href="#">Review de Plugins</a></li>
-                                        <li><a class="dropdown-item" href="#">Templates e Layouts</a></li>
-                                        <li><a class="dropdown-item" href="#">Suporte Técnicos</a></li>
-                                        <li><a class="dropdown-item" href="/politicas">Politicas</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Minha Conta</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Meus Cursos</a>
-                                </li>
-                                <li class="nav-item d-md-none">
-                                    <a href="{{ route('logout') }}" class="nav-item btn-sair">Sair</a>
-                                </li>
-                            </ul>
-                            <div class="action d-none d-md-flex ">
-                                <div>
-                                    <a href="{{ url('/vip') }}" class="btn-planos">AREA VIP</a>
-                                </div>
-                                <div>
-                                    <a href="{{ route('logout') }}" class="btn-sair"><img
-                                            src="{{ url('assets/img/sair.png') }}" alt=""></a>
-                                </div>
-                            </div>
-                        </div>
+                        {{-- <a href="{{ route('logout') }}" class="btn-sair"><img
+                                src="{{ url('assets/img/sair.png') }}" alt=""></a> --}}
                     </div>
                 </nav>
-            </header>
-        </div>
+            </div>
+        </header>
         <div>
 
             @yield('content')
