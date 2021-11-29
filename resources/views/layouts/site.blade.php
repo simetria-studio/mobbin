@@ -20,7 +20,7 @@
 <body>
     <div id="app">
         <header>
-            <div class="container-fluid">
+            <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark  ">
                     <a class="navbar-brand" href="{{ route('home') }}">
                         <img src="{{ url('assets/img/newlogo.png') }}" alt="">
