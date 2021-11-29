@@ -58,12 +58,12 @@
                     </div>
                     <div class="perfil d-none d-md-flex">
                         <div class="dropdown">
-                                <img src="{{ url('assets/img/avatar.jpg') }}" alt="">
-                                <div class="dropdown-content">
-                                    <a href="#">Minha Conta</a>
-                                    <a href="{{ route('logout') }}">Sair</a>
+                            <img src="{{ url('assets/img/avatar.jpg') }}" alt="">
+                            <div class="dropdown-content">
+                                <a href="#">Minha Conta</a>
+                                <a href="{{ route('logout') }}">Sair</a>
 
-                                </div>
+                            </div>
 
                         </div>
                         </a>
