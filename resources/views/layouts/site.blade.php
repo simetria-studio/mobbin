@@ -30,7 +30,8 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse d-xl-flex  justify-content-sm-center " id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse d-xl-flex  justify-content-sm-center "
+                        id="navbarSupportedContent">
                         <ul class="navbar-nav ">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
@@ -56,8 +57,15 @@
                         <a href="{{ url('/vip') }}" class="btn-vip" type="button">VIP</a>
                     </div>
                     <div class="perfil d-none d-md-flex">
-                        <a href="" type="button">
-                            <img src="{{ url('assets/img/avatar.jpg') }}" alt="">
+                        <div class="dropdown">
+                                <img src="{{ url('assets/img/avatar.jpg') }}" alt="">
+                                <div class="dropdown-content">
+                                    <a href="#">Minha Conta</a>
+                                    <a href="{{ route('logout') }}">Sair</a>
+
+                                </div>
+
+                        </div>
                         </a>
                         {{-- <a href="{{ route('logout') }}" class="btn-sair"><img
                                 src="{{ url('assets/img/sair.png') }}" alt=""></a> --}}

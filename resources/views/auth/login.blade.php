@@ -4,7 +4,7 @@
         <div class="mobbin">
             <div class="logo">
                 <div class="logotipo">
-                    <img src="{{ url('assets/img/logo.png') }}" alt="">
+                    <img src="{{ url('assets/img/newlogo.png') }}" alt="">
                 </div>
                 <div class="registre">
                     Não tem cadastro?&nbsp; <br><a href="{{ url('registro') }}">Registrar-se</a>
