@@ -46,6 +46,12 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Suporte</a>
                             </li>
+                            @if (auth()->user()->permission == 10)
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('admin.home') }}">Admin</a>
+                            </li>
+                            @endif
+
                             <li class="nav-item d-md-none mb-4 mt-2">
                                 <a href="{{ route('logout') }}" class="nav-item btn-sair">Sair</a>
                             </li>

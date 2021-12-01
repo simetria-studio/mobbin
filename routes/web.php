@@ -39,7 +39,7 @@ Route::get('/layouts', [SiteController::class, 'layouts'])->name('layouts')->mid
 
 
 
-Route::get('admin', [PainelController::class, 'index']);
+Route::get('admin', [PainelController::class, 'index'])->name('admin.home');
 
 Route::get('admin/layouts', [PainelController::class, 'layouts']);
 
