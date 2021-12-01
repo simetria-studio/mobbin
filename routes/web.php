@@ -54,3 +54,6 @@ Route::get('/vip', function () {
 Route::get('/politicas', function () {
     return view('site.politicas');
 });
+Route::get('/me', function () {
+    return view('site.me');
+});

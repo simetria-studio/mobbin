@@ -1,0 +1,630 @@
+// principal
+.kujRMK {
+    min-height: 100vh;
+    color: rgb(255, 255, 255);
+    background: rgb(18, 18, 20);
+    padding-top: 72px;
+}
+.fiBdLJ {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+// LADO ESQUERDO
+.kFdGWd {
+    width: 100%;
+    max-width: 1180px;
+    padding: 48px 30px 22.0938px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.fMoXDw {
+    position: sticky;
+    top: 120px;
+    width: 352px;
+    margin-right: 64px;
+    background: rgb(32, 32, 36);
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 8px 0px;
+}
+.evZRGq {
+    width: 100%;
+    padding: 12px 24px;
+    font-size: 16px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    background: transparent;
+    border-width: 0px 0px 0px 2px;
+    border-top-style: initial;
+    border-right-style: initial;
+    border-bottom-style: initial;
+    border-top-color: initial;
+    border-right-color: initial;
+    border-bottom-color: initial;
+    border-image: initial;
+    border-left-style: solid;
+    border-left-color: transparent;
+    transition: background 0.2s ease 0s, border 0.2s ease 0s;
+    display: block;
+    cursor: pointer;
+}
+.evZRGq:first-child {
+    padding-top: 16px;
+}
+.evZRGq:last-child {
+    padding-bottom: 16px;
+}
+.evZRGq.active {
+    background: rgb(41, 41, 46);
+    border-left-color: rgb(130, 87, 230);
+}
+.evZRGq:hover {
+    background: rgb(41, 41, 46);
+}
+
+// Lado direito
+.bRHSrZ {
+    flex: 1 1 0%;
+    min-width: 0px;
+}
+.iqEaGO {
+    background: rgb(32, 32, 36);
+    border-radius: 5px;
+    padding: 32px;
+}
+// cabeçalho
+.jjtpdI {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    font-size: 24px;
+    margin-bottom: 1.33em;
+}
+.jjtpdI h2 {
+    margin: 0px;
+}
+.iqEaGO h2 {
+    font-size: 24px;
+    margin-bottom: 1.33em;
+}
+.bkRHf {
+    display: inline-flex;
+    background: rgb(41, 41, 46);
+    border-radius: 5px;
+    padding: 8px;
+}
+.bUZYRa {
+    font-size: 11.5px;
+    letter-spacing: 0.2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(225, 225, 230);
+    padding: 8px 16px;
+    border: 0px;
+    border-radius: 5px;
+    transition: background 0.2s ease 0s;
+    background: rgb(130, 87, 229);
+    cursor: default;
+}
+.jNqecA {
+    font-size: 11.5px;
+    letter-spacing: 0.2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(225, 225, 230);
+    padding: 8px 16px;
+    border: 0px;
+    border-radius: 5px;
+    background: transparent;
+    transition: background 0.2s ease 0s;
+}
+.bUZYRa + button {
+    margin-left: 8px;
+}
+// Formulario
+form {
+    display: flex;
+    flex-direction: column;
+}
+.fpVrne {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 16px;
+}
+.fpVrne + section {
+    margin-top: 24px;
+}
+.jEXrZm label {
+    display: block;
+    width: 100%;
+    min-height: 16px;
+    font-size: 14px;
+    color: rgb(135, 134, 139);
+    margin-bottom: 8px;
+}
+.jEXrZm > div {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.brFinj {
+    position: relative;
+    flex: 1 1 0%;
+}
+.jEXrZm input {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    background: rgb(18, 18, 20);
+    border-color: rgb(18, 18, 20);
+    color: rgb(255, 255, 255);
+    padding: 0px 1em;
+    border-radius: 5px;
+}
+.jEXrZm > div {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.jEXrZm:focus-within input:not(:read-only) {
+    border-color: rgb(130, 87, 229);
+}
+input:focus,
+textarea:focus {
+    border-color: rgb(130, 87, 229);
+}
+.jEXrZm input:disabled {
+    opacity: 0.5;
+}
+input:disabled,
+textarea:disabled {
+    cursor: not-allowed;
+    color: rgb(105, 105, 105);
+    background: rgb(25, 25, 25);
+}
+.jHRxGB {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 16px;
+}
+.jHRxGB + section {
+    margin-top: 24px;
+}
+.elHWPS {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 16px;
+}
+.hgPDov {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.hgPDov input {
+    flex-shrink: 0;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    appearance: none;
+    padding: 0px;
+    background: rgb(18, 18, 20);
+    border: 2px solid rgb(32, 32, 36);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+    overflow: hidden;
+}
+.hgPDov input:focus {
+    border-color: rgb(130, 87, 229);
+}
+.hgPDov div {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.hgPDov div > span {
+    padding: 0px;
+    color: rgb(135, 134, 139);
+    font-size: 16px;
+    transition: color 0.2s ease 0s;
+}
+.hgPDov input:checked {
+    background: rgb(130, 87, 229);
+    border-color: rgb(130, 87, 229);
+}
+form span {
+    display: inline-block;
+    color: rgb(211, 66, 66);
+    padding-top: 7px;
+    font-size: 14px;
+}
+.fNordE {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 16px;
+}
+.dwlTEZ {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 16px;
+}
+// button
+.ffvZkK {
+    align-self: flex-start;
+    margin-top: 24px;
+    width: 180px;
+}
+.gGkNIZ {
+    position: relative;
+    padding: 16px 32px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(130, 87, 229);
+    border-radius: 5px;
+    transition: background 0.2s ease 0s, border 0.2s ease 0s;
+    cursor: pointer;
+    background: rgb(130, 87, 229);
+}
+.geoxVe {
+    align-self: flex-start;
+    margin-top: 24px;
+    width: 180px;
+}
+.gGkNIZ::after {
+    content: "";
+    position: absolute;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255) rgba(255, 255, 255, 0.25)
+        rgb(255, 255, 255) rgb(255, 255, 255);
+    border-image: initial;
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    animation: 0.75s linear 0s infinite normal none running inmtdF;
+    will-change: transform, opacity;
+    opacity: 0;
+}
+.gGkNIZ:not(:disabled):hover {
+    background: rgb(168, 131, 255);
+    border-color: rgb(168, 131, 255);
+}
+// acessos contas
+.hIbTsC + section {
+    margin-top: 24px;
+}
+.hIbTsC {
+    background: rgb(32, 32, 36);
+    border-radius: 5px;
+    padding: 32px;
+}
+.nAwjn {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    font-size: 24px;
+    margin-bottom: 1.33em;
+}
+.nAwjn h2 {
+    margin: 0px;
+}
+.hIbTsC h2 {
+    font-size: 24px;
+    margin-bottom: 1.33em;
+}
+.hzwvPp {
+    font-size: 14px;
+    color: rgb(115, 115, 128);
+    border: 0px;
+    background: none;
+    transition: color 0.2s ease 0s;
+}
+.irjWcZ h4 {
+    font-size: 14px;
+    font-weight: normal;
+    color: rgb(115, 115, 128);
+    margin-bottom: 8px;
+}
+.irjWcZ > div {
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 16px;
+    background: rgb(41, 41, 46);
+    border-radius: 5px;
+}
+.irjWcZ > div span {
+    flex: 1 1 0%;
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.irjWcZ > div button {
+    border: 0px;
+    background: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(130, 87, 229);
+    transition: color 0.2s ease 0s;
+    margin-left: 1em;
+}
+.sc-heOwwK + .sc-heOwwK {
+    margin-top: 24px;
+}
+//  MODALLL
+form {
+    display: flex;
+    flex-direction: column;
+}
+.modal-content {
+    width: 100%;
+    max-width: 432px;
+    max-height: 90vh;
+    padding: 33px;
+    background: rgb(32, 32, 36);
+
+    border-radius: 5px;
+    transform: translateY(20px);
+    transition: transform 0.2s ease-in 0s, opacity 0.2s ease-in 0s;
+    overflow-y: auto;
+    text-align: left;
+    cursor: default;
+}
+
+.cTgfMb input {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    background: rgb(18, 18, 20);
+    border-color: rgb(18, 18, 20);
+    color: rgb(255, 255, 255);
+    padding: 0px 1em 0px 2.65em;
+    border-radius: 5px;
+}
+.brFinj > svg {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: rgb(40, 39, 44);
+    font-size: 14px;
+    transition: fill 0.2s ease 0s;
+}
+.cTgfMb:focus-within input:not(:read-only) {
+    border-color: rgb(130, 87, 229);
+}
+input:focus,
+textarea:focus {
+    border-color: rgb(130, 87, 229);
+}
+.modal-footer {
+    button {
+        width: 100%;
+    }
+}
+.modal-body,
+.modal-footer,
+.modal-header {
+    border: 0;
+}
+.bGGNTp > div {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.bGGNTp input {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    background: rgb(18, 18, 20);
+    border-color: rgb(18, 18, 20);
+    color: rgb(255, 255, 255);
+    padding: 0px 2.65em;
+    border-radius: 5px;
+}
+.hRHjch {
+    display: block;
+    position: absolute;
+    background: none;
+    border: 0px;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: opacity 0.2s ease 0s;
+    cursor: pointer;
+}
+.brFinj > svg {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: rgb(40, 39, 44);
+    font-size: 14px;
+    transition: fill 0.2s ease 0s;
+}
+.hRHjch svg {
+    fill: rgb(130, 87, 229);
+    font-size: 18px;
+}
+.bGGNTp:focus-within input:not(:read-only) {
+    border-color: rgb(130, 87, 229);
+}
+.VmZhk {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 10px;
+}
+.dUctZc svg {
+    fill: rgb(130, 87, 229);
+    font-size: 18px;
+}
+.phone {
+    width: 49% !important;
+}
+
+.perfil-img {
+    border-radius: 50%;
+    border: red 1px solid;
+    width: 60px;
+    height: 60px;
+}
+
+// Perfil
+
+.cuvggm aside {
+    width: 31.425%;
+    margin-top: -104px;
+}
+.eiHLzg {
+    text-align: center;
+}
+.jeOLhp {
+    position: relative;
+    width: 100%;
+    padding: 32px;
+    background: rgb(32, 32, 36);
+    border-radius: 5px;
+}
+.eiHLzg .sc-bQltev {
+    right: 10px;
+    top: 10px;
+}
+.kjKwmZ svg {
+    width: 16px;
+    height: 16px;
+}
+.eiHLzg .sc-bQltev {
+    right: 10px;
+    top: 10px;
+}
+.ddByRK {
+    display: block;
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: 0px auto 24px;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.ddByRK::before {
+    content: "";
+    position: absolute;
+    inset: 0px;
+    border-radius: 50%;
+    border: 4px solid rgb(39, 39, 43);
+}
+.ddByRK .hover-text {
+    position: absolute;
+    width: calc(100% - 24px);
+    height: calc(100% - 24px);
+    top: 12px;
+    left: 12px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.ddByRK .hover-text span {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 11px;
+    letter-spacing: 0.25px;
+    padding-top: 14px;
+    transition: all 0.2s ease 0s;
+    transform: translateY(45px);
+}
+.ciUpew {
+    background: transparent;
+    border: 0px;
+    width: 100%;
+    height: 100%;
+}
+.ddByRK img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: all 0.2s ease 0s;
+}
+.fnCmWH {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    fill: transparent;
+}
+.fnCmWH circle {
+    stroke-width: 4;
+    stroke-dasharray: 565.487, 565.487;
+    stroke-dashoffset: 0;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    animation: 1.4s ease-in-out 0s 1 normal forwards running bWgOqZ;
+}
+.jeOLhp h1,
+.jeOLhp h2 {
+    position: relative;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0px 0px 1.333em;
+}
+.eiHLzg section,
+.eiHLzg a {
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(230, 230, 230);
+    margin: 1.5em 0px;
+}
+.jjhQja {
+    margin-top: 25px;
+}
+.jrislX {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.eiHLzg .sc-bQltev {
+    right: 10px;
+    top: 10px;
+}
+
+.kjKwmZ svg {
+    width: 16px;
+    height: 16px;
+}
+.nome{
+    color: #fff;
+    background-color: transparent;
+    border: none;
+}
