@@ -50,12 +50,12 @@
                             <h2>Endereço</h2>
                         </div>
                         {{-- formulario --}}
-                        <form data-testid="form">
-                            <section class="sc-ihsSHl fpVrne">
+                        <form data-testid="form" class=" d-sm-block">
+                            <section class="sc-ihsSHl fpVrne ">
                                 <div color="" class="sc-ezipRf jEXrZm">
                                     <label for="postal_code">CEP</label>
-                                    <div>
-                                        <div class="sc-cTkOiY brFinj">
+                                    <div class="d-sm-block">
+                                        <div class="sc-cTkOiY brFinj ">
                                             <input name="postal_code" type="text" maxlength="8" value="">
                                         </div>
                                     </div>
@@ -81,7 +81,7 @@
                                     </div>
                                     <label class="sc-hoXqvr hgPDov">
                                         <div>
-                                            <input type="checkbox"  name="no_number">
+                                            <input type="checkbox" name="no_number">
                                             <span>Sem número</span>
                                         </div>
                                     </label>
@@ -142,7 +142,7 @@
                     <section id="section-Se" class="sc-bQltev hIbTsC">
                         <div class="sc-evBfig nAwjn">
                             <h2>Meu acesso</h2>
-                            <button class="sc-eiWQhh hzwvPp">Excluir minha conta</button>
+                            {{-- <button class="sc-eiWQhh hzwvPp">Excluir minha conta</button> --}}
                         </div>
                         <div class="sc-heOwwK irjWcZ mb-3">
                             <h4>E-mail de cadastro</h4>
@@ -344,7 +344,8 @@
                                             <label for="name">Nome completo</label>
                                             <div>
                                                 <div class="sc-cTkOiY brFinj">
-                                                    <input name="name" type="text" id="name" aria-label="name" value="Alisson Tiago Ezidio Galvao">
+                                                    <input name="name" type="text" id="name" aria-label="name"
+                                                        value="Alisson Tiago Ezidio Galvao">
                                                 </div>
                                             </div>
                                         </div>

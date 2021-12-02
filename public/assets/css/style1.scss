@@ -115,14 +115,14 @@ input {
 }
 input:focus,
 textarea:focus {
-    border-color: rgb(130, 87, 229);
+    border-color:#fff;
 }
 
 .inputs:focus-within svg {
-    fill: rgb(130, 87, 229);
+    fill: white;
 }
 .inputs:focus-within svg {
-    fill: rgb(130, 87, 229);
+    fill: white;
 }
 .Doxm {
     margin: 18px auto 0;
@@ -136,7 +136,7 @@ textarea:focus {
     a {
         font-size: 14px;
         font-weight: 600;
-        color: rgb(130, 87, 230);
+        color: white;
         margin: 40px 0px 24px;
         opacity: 0.8;
         transition: opacity 0.2s ease 0s;
@@ -149,10 +149,10 @@ form > .btn-cadastrar {
     margin-top: 20px;
 }
 .btn-cadastrar {
-    background: rgb(130, 87, 229);
+    background: #121214;
     border-radius: 5px;
-    border: 0px;
-    color: rgb(255, 255, 255);
+    border: #121214 1px solid;
+    color: #fff;
     font-weight: bold;
     height: 50px;
     transition: background 0.2s ease 0s, color 0.2s ease 0s;
@@ -160,8 +160,8 @@ form > .btn-cadastrar {
     text-transform: uppercase;
 }
 .btn-cadastrar:hover {
-    background: rgb(168, 131, 255);
-    border: 0px;
+    background: white;
+    color: #121214;
 }
 .simetria {
     max-width: 480px;
@@ -284,6 +284,8 @@ form > .btn-cadastrar {
         color: #ccc;
     }
 }
+
+
 
 @media only screen and (max-width: 425px) {
     .logo {

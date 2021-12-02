@@ -46,8 +46,14 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Suporte</a>
                             </li>
-                            <li class="nav-item d-md-none mb-4 mt-2">
-                                <a href="{{ route('logout') }}" class="nav-item btn-sair">Sair</a>
+                            <li class="nav-item d-md-none">
+                                <a href="{{ url('/vip') }}" class="nav-link btn-sair">VIP</a>
+                            </li>
+                            <li class="nav-item d-md-none">
+                                <a href="{{ url('/me') }}" class="nav-link btn-sair">Minha Conta</a>
+                            </li>
+                            <li class="nav-item d-md-none">
+                                <a href="{{ route('logout') }}" class="nav-link btn-sair">Sair</a>
                             </li>
                         </ul>
                         {{-- <div class="action d-none d-md-flex "></div> --}}
@@ -60,7 +66,7 @@
                         <div class="dropdown">
                             <img src="{{ url('assets/img/avatar.jpg') }}" alt="">
                             <div class="dropdown-content">
-                                <a href="#">Minha Conta</a>
+                                <a href="{{ url('/me') }}">Minha Conta</a>
                                 <a href="{{ route('logout') }}">Sair</a>
 
                             </div>

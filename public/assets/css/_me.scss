@@ -10,60 +10,6 @@
     -webkit-box-pack: center;
     justify-content: center;
 }
-// LADO ESQUERDO
-.kFdGWd {
-    width: 100%;
-    max-width: 1180px;
-    padding: 48px 30px 22.0938px;
-    display: flex;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-.fMoXDw {
-    position: sticky;
-    top: 120px;
-    width: 352px;
-    margin-right: 64px;
-    background: rgb(32, 32, 36);
-    border-radius: 5px;
-    overflow: hidden;
-    padding: 8px 0px;
-}
-.evZRGq {
-    width: 100%;
-    padding: 12px 24px;
-    font-size: 16px;
-    text-align: left;
-    color: rgb(255, 255, 255);
-    background: transparent;
-    border-width: 0px 0px 0px 2px;
-    border-top-style: initial;
-    border-right-style: initial;
-    border-bottom-style: initial;
-    border-top-color: initial;
-    border-right-color: initial;
-    border-bottom-color: initial;
-    border-image: initial;
-    border-left-style: solid;
-    border-left-color: transparent;
-    transition: background 0.2s ease 0s, border 0.2s ease 0s;
-    display: block;
-    cursor: pointer;
-}
-.evZRGq:first-child {
-    padding-top: 16px;
-}
-.evZRGq:last-child {
-    padding-bottom: 16px;
-}
-.evZRGq.active {
-    background: rgb(41, 41, 46);
-    border-left-color: rgb(130, 87, 230);
-}
-.evZRGq:hover {
-    background: rgb(41, 41, 46);
-}
 
 // Lado direito
 .bRHSrZ {
@@ -173,7 +119,7 @@ form {
     align-items: center;
 }
 .jEXrZm:focus-within input:not(:read-only) {
-    border-color: rgb(130, 87, 229);
+    border-color: white;
 }
 input:focus,
 textarea:focus {
@@ -224,7 +170,7 @@ textarea:disabled {
     overflow: hidden;
 }
 .hgPDov input:focus {
-    border-color: rgb(130, 87, 229);
+    border-color: white;
 }
 .hgPDov div {
     display: flex;
@@ -239,8 +185,8 @@ textarea:disabled {
     transition: color 0.2s ease 0s;
 }
 .hgPDov input:checked {
-    background: rgb(130, 87, 229);
-    border-color: rgb(130, 87, 229);
+    background: white;
+    border-color: white;
 }
 form span {
     display: inline-block;
@@ -274,11 +220,11 @@ form span {
     letter-spacing: 0.5px;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
-    border: 2px solid rgb(130, 87, 229);
+    border: 2px solid #fff;
     border-radius: 5px;
     transition: background 0.2s ease 0s, border 0.2s ease 0s;
     cursor: pointer;
-    background: rgb(130, 87, 229);
+    background: #121214;
 }
 .geoxVe {
     align-self: flex-start;
@@ -303,8 +249,9 @@ form span {
     opacity: 0;
 }
 .gGkNIZ:not(:disabled):hover {
-    background: rgb(168, 131, 255);
-    border-color: rgb(168, 131, 255);
+    background: white;
+    border-color: #121214;
+    color: #121214;
 }
 // acessos contas
 .hIbTsC + section {
@@ -368,7 +315,7 @@ form span {
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
-    color: rgb(130, 87, 229);
+    color: white;
     transition: color 0.2s ease 0s;
     margin-left: 1em;
 }
@@ -415,11 +362,11 @@ form {
     transition: fill 0.2s ease 0s;
 }
 .cTgfMb:focus-within input:not(:read-only) {
-    border-color: rgb(130, 87, 229);
+    border-color: white;
 }
 input:focus,
 textarea:focus {
-    border-color: rgb(130, 87, 229);
+    border-color: white;
 }
 .modal-footer {
     button {
@@ -467,11 +414,11 @@ textarea:focus {
     transition: fill 0.2s ease 0s;
 }
 .hRHjch svg {
-    fill: rgb(130, 87, 229);
+    fill: white;
     font-size: 18px;
 }
 .bGGNTp:focus-within input:not(:read-only) {
-    border-color: rgb(130, 87, 229);
+    border-color: white;
 }
 .VmZhk {
     display: grid;
@@ -479,7 +426,7 @@ textarea:focus {
     gap: 10px;
 }
 .dUctZc svg {
-    fill: rgb(130, 87, 229);
+    fill: white;
     font-size: 18px;
 }
 .phone {
@@ -623,8 +570,25 @@ textarea:focus {
     width: 16px;
     height: 16px;
 }
-.nome{
+.nome {
     color: #fff;
     background-color: transparent;
     border: none;
+}
+
+@media only screen and (max-width: 425px) {
+    .jeOLhp {
+        padding: 0;
+    }
+    .fpVrne,
+    .jHRxGB,
+    .fNordE {
+        grid-auto-flow: row;
+    }
+    .phone{
+        width: 100% !important;
+    }
+    .kujRMK{
+        padding-top: 0;
+    }
 }
