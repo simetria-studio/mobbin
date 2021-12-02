@@ -8,6 +8,13 @@
                     {{-- perfil --}}
                     <section id="section-sn" class="sc-jEUrFJ iqEaGO mb-4">
                         <h2>Meu perfil</h2>
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                @foreach ($errors->all() as $error)
+                                    <p>{{ $error }}</p>
+                                @endforeach
+                            </div>
+                        @endif
                         <aside>
                             <div class="sc-joCieG sc-eiWQhh jeOLhp eiHLzg">
                                 <label class="sc-bQbiG ddByRK">
@@ -44,12 +51,12 @@
                             </div>
                         </aside>
                     </section>
-                    <section id="section-Le" class="sc-jEUrFJ iqEaGO mb-4">
-                        {{-- cabeçalho --}}
+                    {{-- <section id="section-Le" class="sc-jEUrFJ iqEaGO mb-4">
+
                         <div class="sc-kBrnbA jjtpdI">
                             <h2>Endereço</h2>
                         </div>
-                        {{-- formulario --}}
+
                         <form data-testid="form" class=" d-sm-block">
                             <section class="sc-ihsSHl fpVrne ">
                                 <div color="" class="sc-ezipRf jEXrZm">
@@ -122,8 +129,8 @@
                                         </div>
                                     </div>
                                 </section>
-                            </section>
-                            <section class="sc-ihsSHl jHRxGB">
+                            </section> --}}
+                            {{-- <section class="sc-ihsSHl jHRxGB">
                                 <section class="sc-ihsSHl dwlTEZ">
                                     <div color="" class="sc-ezipRf jEXrZm">
                                         <label for="phone">Telefone</label>
@@ -134,8 +141,8 @@
                                         </div>
                                     </div>
                                 </section>
-                            </section>
-                            <button loading="0" class="sc-hmfusV gGkNIZ sc-jmdVfC ffvZkK" type="submit">Salvar</button>
+                            </section> --}}
+                            {{-- <button loading="0" class="sc-hmfusV gGkNIZ sc-jmdVfC ffvZkK" type="submit">Salvar</button> --}}
                         </form>
                     </section>
                     {{-- acessos e conta --}}
@@ -148,7 +155,7 @@
                             <h4>E-mail de cadastro</h4>
                             <div>
                                 <span>{{ auth()->user()->email }}</span>
-                                <button type="button" data-bs-toggle="modal" data-bs-target="#email">Alterar</button>
+                                {{-- <button type="button" data-bs-toggle="modal" data-bs-target="#email" disabled>Alterar</button> --}}
                             </div>
                         </div>
                         <div class="sc-heOwwK irjWcZ">
@@ -158,13 +165,13 @@
                                 <button type="button" data-bs-toggle="modal" data-bs-target="#senha">Alterar</button>
                             </div>
                         </div>
-                        <div class="sc-heOwwK irjWcZ">
+                        {{-- <div class="sc-heOwwK irjWcZ">
                             <h4>CPF/CNPJ</h4>
                             <div>
-                                <span>Não cadastrado</span>
+                                <span>Não cadastrado @if (auth()->user()->cpf) @else @endif</span>
                                 <button type="button" data-bs-toggle="modal" data-bs-target="#cpf">Preencher</button>
                             </div>
-                        </div>
+                        </div> --}}
                     </section>
                 </div>
                 {{-- Modal --}}
@@ -215,9 +222,11 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <form data-testid="form">
+                                    <form data-testid="form"
+                                        action="{{ route('perfil.alt.password', auth()->user()->id) }}" method="post">
+                                        @csrf
                                         <section class="sc-kNPvCX VmZhk">
-                                            <div color="" class="sc-ezipRf bGGNTp">
+                                            {{-- <div color="" class="sc-ezipRf bGGNTp">
                                                 <div>
                                                     <div class="sc-cTkOiY brFinj">
                                                         <svg stroke="currentColor" fill="currentColor" stroke-width="0"
@@ -241,7 +250,7 @@
                                                         </a>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div> --}}
                                             <div color="" class="sc-ezipRf bGGNTp">
                                                 <div>
                                                     <div class="sc-cTkOiY brFinj">
@@ -255,7 +264,7 @@
                                                         <input name="password" type="password" id="password"
                                                             aria-label="password" placeholder="Nova senha" value=""><a
                                                             tabindex="-1" class="sc-fvFlmW hRHjch">
-                                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                            <svg id="zoio" stroke="currentColor" fill="currentColor" stroke-width="0"
                                                                 viewBox="0 0 24 24" height="1em" width="1em"
                                                                 xmlns="http://www.w3.org/2000/svg">
                                                                 <path
@@ -280,7 +289,7 @@
                                                             id="password_confirmation" aria-label="password_confirmation"
                                                             placeholder="Confirme sua senha" value="">
                                                         <a tabindex="-1" class="sc-fvFlmW hRHjch">
-                                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                            <svg id="zoio_confirm" stroke="currentColor" fill="currentColor" stroke-width="0"
                                                                 viewBox="0 0 24 24" height="1em" width="1em"
                                                                 xmlns="http://www.w3.org/2000/svg">
                                                                 <path
@@ -292,11 +301,12 @@
                                                 </div>
                                             </div>
                                         </section>
-                                    </form>
+
                                 </div>
                                 <div class="modal-footer">
                                     <button type="submit" class="sc-hmfusV gGkNIZ">Confirmar</button>
                                 </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -338,22 +348,25 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                                     </button>
                                 </div>
-                                <div class="modal-body">
-                                    <section class="sc-ihsSHl jHRxGB">
-                                        <div color="" class="sc-ezipRf jEXrZm">
-                                            <label for="name">Nome completo</label>
-                                            <div>
-                                                <div class="sc-cTkOiY brFinj">
-                                                    <input name="name" type="text" id="name" aria-label="name"
-                                                        value="{{ auth()->user()->name }}">
+                                <form action="{{ route('perfil.alt.name', auth()->user()->id) }}" method="POST">
+                                    @csrf
+                                    <div class="modal-body">
+                                        <section class="sc-ihsSHl jHRxGB">
+                                            <div color="" class="sc-ezipRf jEXrZm">
+                                                <label for="name">Nome completo</label>
+                                                <div>
+                                                    <div class="sc-cTkOiY brFinj">
+                                                        <input name="name" type="text" id="name" aria-label="name"
+                                                            value="{{ auth()->user()->name }}">
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </section>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="submit" class="sc-hmfusV gGkNIZ">Confirmar</button>
-                                </div>
+                                        </section>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="sc-hmfusV gGkNIZ">Confirmar</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>

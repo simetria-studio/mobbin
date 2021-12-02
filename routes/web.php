@@ -46,6 +46,9 @@ Route::get('admin/layouts', [PainelController::class, 'layouts']);
 
 Route::post('webhook', [NotifyController::class, 'webhook']);
 
+Route::post('name-alt/{id}', [UserController::class, 'nameAlt'])->name('perfil.alt.name')->middleware('auth');
+Route::post('password-alt/{id}', [UserController::class, 'password'])->name('perfil.alt.password')->middleware('auth');
+
 
 Route::get('/vip', function () {
 

@@ -21,6 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->integer('permission')->default(0);
             $table->string('order_id')->nullable();
+            $table->string('cpf')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
