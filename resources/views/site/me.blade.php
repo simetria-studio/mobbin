@@ -15,7 +15,7 @@
                                         <span>Trocar imagem</span>
                                     </div>
                                     <button class="sc-PGRUV ciUpew">
-                                        <img src="https://ui-avatars.com/api/?size=512&amp;background=5B4699&amp;color=fff&amp;name=Alisson%20Tiago%20Ezidio%20Galvao"
+                                        <img src="https://ui-avatars.com/api/?size=512&amp;background=ffa800&amp;color=fff&amp;name={{ auth()->user()->name }}"
                                             alt="Profile">
                                     </button>
                                     <svg viewBox="0 0 180 180" class="sc-joetPs fnCmWH">
@@ -26,7 +26,7 @@
                                         <circle r="88" cx="90" cy="90" stroke="url(#gradient)"></circle>
                                     </svg>
                                 </label>
-                                <h1>Alisson Tiago Ezidio Galvao <button loading="0" class="sc-bQltev kjKwmZ nome"
+                                <h1>{{ auth()->user()->name }} <button loading="0" class="sc-bQltev kjKwmZ nome"
                                         data-bs-toggle="modal" data-bs-target="#nome"><svg stroke="currentColor"
                                             fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em"
                                             width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -40,7 +40,7 @@
                                     <div class="sc-cSOiNf jjhQja"></div>
                                     <div class="sc-jVcrfF jrislX"></div>
                                 </section>
-                                <div class="sc-heOwwK AvgPP">Membro desde: maio, 2020</div>
+                                {{-- <div class="sc-heOwwK AvgPP">Membro desde: maio, 2020</div> --}}
                             </div>
                         </aside>
                     </section>
@@ -147,7 +147,7 @@
                         <div class="sc-heOwwK irjWcZ mb-3">
                             <h4>E-mail de cadastro</h4>
                             <div>
-                                <span>tiago.ezidio99@gmail.com</span>
+                                <span>{{ auth()->user()->email }}</span>
                                 <button type="button" data-bs-toggle="modal" data-bs-target="#email">Alterar</button>
                             </div>
                         </div>
@@ -345,7 +345,7 @@
                                             <div>
                                                 <div class="sc-cTkOiY brFinj">
                                                     <input name="name" type="text" id="name" aria-label="name"
-                                                        value="Alisson Tiago Ezidio Galvao">
+                                                        value="{{ auth()->user()->name }}">
                                                 </div>
                                             </div>
                                         </div>

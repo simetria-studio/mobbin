@@ -8,6 +8,7 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\ForgotPasswordController;
 use App\Http\Controllers\NotifyController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,7 +38,7 @@ Route::get('minha-conta', [PerfilController::class, 'conta'])->name('conta');
 Route::get('/', [SiteController::class, 'index'])->name('home')->middleware('auth');
 Route::get('/layouts', [SiteController::class, 'layouts'])->name('layouts')->middleware('auth');
 
-
+Route::get('perfil', [UserController::class, 'index'])->name('perfil')->middleware('auth');
 
 Route::get('admin', [PainelController::class, 'index'])->name('admin.home');
 
@@ -54,6 +55,6 @@ Route::get('/vip', function () {
 Route::get('/politicas', function () {
     return view('site.politicas');
 });
-Route::get('/me', function () {
-    return view('site.me');
-});
+// Route::get('/me', function () {
+//     return view('site.me');
+// });
