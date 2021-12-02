@@ -16,9 +16,6 @@ body {
     .logotipo {
         display: flex;
         justify-content: center;
-        img {
-
-        }
     }
 
     .registre {
@@ -90,7 +87,7 @@ input {
     }
     input:focus,
     textarea:focus {
-        border-color: rgb(130, 87, 229);
+        border-color: white;
     }
     svg {
         position: absolute;
@@ -103,15 +100,15 @@ input {
     }
 }
 .email:focus-within svg {
-    fill: rgb(130, 87, 229);
+    fill: white;
 }
 .senha:focus-within svg {
-    fill: rgb(130, 87, 229);
+    fill: white;
 }
 .senha {
     input:focus,
     textarea:focus {
-        border-color: rgb(130, 87, 229);
+        border-color: white;
     }
     position: relative;
     flex: 1 1 0%;
@@ -147,7 +144,7 @@ input {
         text-decoration: none;
 
         svg {
-            fill: rgb(130, 87, 229);
+            fill: white;
             font-size: 18px;
         }
     }
@@ -161,7 +158,7 @@ input {
 }
 .btn-entrar {
     width: 100%;
-    background: #8257e5;
+    background: #121214;
     color: #ccc;
     border: 0;
     border-radius: 5px;
@@ -172,14 +169,15 @@ input {
     transition: background 0.2s ease 0s, color 0.2s ease 0s;
 }
 .btn-entrar:hover {
-    background: rgb(168, 131, 255);
-    border: 0px;
+    background: #ccc;
+    color: #121214;
+    border: #121214 1px solid;      
 }
 .forgot {
     text-decoration: none;
     font-size: 14px;
     font-weight: 600;
-    color: rgb(130, 87, 230);
+    color: white;
     margin: 8px 0px 24px;
     opacity: 0.8;
     transition: opacity 0.2s ease 0s;
@@ -187,7 +185,7 @@ input {
     outline: none;
 }
 .forgot:hover {
-    color: rgb(130, 87, 230);
+    color: white;
     opacity: 1;
 }
 
@@ -200,14 +198,14 @@ input {
         text-decoration: none;
         font-size: 14px;
         font-weight: 600;
-        color: rgb(130, 87, 230);
+        color: white;
         margin: 8px 0px 24px;
         opacity: 0.8;
         transition: opacity 0.2s ease 0s;
         align-self: flex-start;
     }
     a:hover {
-        color: rgb(130, 87, 230);
+        color: white;
         opacity: 1;
     }
 }
