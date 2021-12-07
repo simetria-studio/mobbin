@@ -16,5 +16,9 @@ class SiteController extends Controller
         return view('site.layouts');
 
     }
+    public function game()
+    {
+        return view('site.game');
+    }
 
 }

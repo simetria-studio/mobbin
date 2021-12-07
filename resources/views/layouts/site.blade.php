@@ -46,6 +46,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Suporte</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('game') }}">Game</a>
+                            </li>
 
                             @if (auth()->user()->permission == 10)
                                 <li class="nav-item">
@@ -268,6 +271,7 @@
             });
         </script>
         <script src="{{ url('assets/js/script.js') }}"></script>
+        <script src="{{ url('assets/js/game.js') }}"></script>
 </body>
 
 
