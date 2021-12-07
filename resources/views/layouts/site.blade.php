@@ -13,7 +13,7 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     {{-- <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css"> --}}
-    <link rel="stylesheet" href="{{ url('assets/css/style2.min.css') }}">
+    <link rel="stylesheet" href="{{ url('assets/css/styleless.min.css') }}">
     <link rel="stylesheet" href="{{ url('assets/css/vip.min.css') }}">
 </head>
 
