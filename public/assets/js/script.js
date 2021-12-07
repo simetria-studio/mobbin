@@ -10,3 +10,8 @@ img2.addEventListener('click', function () {
 });
 
 
+function home()
+
+{
+    window.location.href = "/";
+}
