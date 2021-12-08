@@ -7,6 +7,7 @@ use App\Http\Controllers\PainelController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\ForgotPasswordController;
+use App\Http\Controllers\LayoutsController;
 use App\Http\Controllers\NotifyController;
 use App\Http\Controllers\UserController;
 
@@ -38,6 +39,8 @@ Route::get('minha-conta', [PerfilController::class, 'conta'])->name('conta');
 Route::get('/', [SiteController::class, 'index'])->name('home')->middleware('auth');
 Route::get('/layouts', [SiteController::class, 'layouts'])->name('layouts')->middleware('auth');
 Route::get('/game', [SiteController::class, 'game'])->name('game')->middleware('auth');
+
+Route::post('layout-store', [LayoutsController::class, 'store'])->name('layout.store')->middleware('auth');
 
 Route::get('perfil', [UserController::class, 'index'])->name('perfil')->middleware('auth');
 

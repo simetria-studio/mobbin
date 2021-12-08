@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Layout;
 use Illuminate\Http\Request;
 
 class SiteController extends Controller
@@ -13,7 +14,8 @@ class SiteController extends Controller
     }
     public function layouts()
     {
-        return view('site.layouts');
+        $layouts = Layout::get();
+        return view('site.layouts', get_defined_vars());
 
     }
     public function game()

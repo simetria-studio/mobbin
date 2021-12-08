@@ -13,7 +13,7 @@
                 </div>
             </div>
         </div>
-{{--
+{{-- {{-- --}}
         <div class="caminhos mt-5">
             <div class="item ">
                 <div class="foto">
@@ -24,7 +24,7 @@
                         <p>Recursos criativos</p>
                     </div>
                     <div class="next">
-                        <a href="" type="button">
+                        <a href="{{ url('layouts') }}" type="button">
                             <img src="{{ url('assets/img/next.png') }}" alt="">
                         </a>
                     </div>
@@ -77,9 +77,9 @@
                     </div>
                 </div>
             </div>
-        </div> --}}
+        </div>
     </div>
-    <div id="drag-container">
+    {{-- <div id="drag-container">
         <div id="spin-container">
           <!-- Add your images (or video) here -->
           <img src="{{ url('assets/img/sprite.png') }}" alt="">
@@ -98,10 +98,10 @@
 
 
           <!-- Text at center of ground -->
-          <p>MOBBIN A MELHOR PLATAFORMA</p>
+          {{-- <p>MOBBIN A MELHOR PLATAFORMA</p>
         </div>
         <div id="ground"></div>
-      </div>
+      </div> --}} --}}
 
       {{-- <div id="music-container"></div> --}}
 
