@@ -16,7 +16,8 @@ class LayoutsController extends Controller
      */
     public function index()
     {
-        return view('painel.pages.layouts');
+        $layouts = Layout::get();
+        return view('painel.pages.layouts', get_defined_vars());
     }
 
     /**
@@ -38,7 +39,7 @@ class LayoutsController extends Controller
     public function store(Request $request)
     {
         $data = $request->all();
-
+        // dd($data);
         // $price = str_replace(['.', ','], ['', '.'], $data['price']);
         $img = ImageManagerStatic::make($data['image']);
 
@@ -54,6 +55,7 @@ class LayoutsController extends Controller
             'link_view' => $data['link_view'],
             'link_down' => $data['link_down'],
             'category' => $data['category'],
+            'free' => $request->input('free'),
             'image' => $name,
             'description' => $data['description'],
 

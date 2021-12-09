@@ -15,6 +15,7 @@ class Layout extends Model
         'link_down',
         'link_view',
         'image',
+        'free',
         'description',
     ];
 }
