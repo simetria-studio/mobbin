@@ -20,6 +20,7 @@ class CreateLayoutsTable extends Migration
             $table->string('link_down')->nullable();
             $table->string('link_view')->nullable();
             $table->string('image')->nullable();
+            $table->integer('free')->nullable();
             $table->text('description')->nullable();
             $table->timestamps();
         });

@@ -1,42 +1,37 @@
-@extends('layouts.painel')
+@extends('layouts.site')
 
 
 @section('content')
-    <div class="iq-card-body">
-        <div class="my-3">
-            <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#exampleModalScrollable">
-                Launch demo modal
-            </button>
-        </div>
-        <table class="table table-dark">
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                </tr>
-            </tbody>
-        </table>
+<div class="container">
+    <div class="page">
+        <form action="{{ route('layout.store') }}" method="post" enctype="multipart/form-data">
+            @csrf
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Titulo</label>
+            <input type="text" name="title" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Link Visualizar</label>
+            <input type="text" name="link_view" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Link Download</label>
+            <input type="text" name="link_down" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="formFile" class="form-label">Imagem</label>
+            <input class="form-control" name="image" type="file" id="formFile">
+          </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Categoria</label>
+            <input type="text" name="category" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Descrição</label>
+            <textarea class="form-control" name="description" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Cadastrar</button>
+        </form>
     </div>
+</div>
 @endsection

@@ -40,6 +40,7 @@ Route::get('/', [SiteController::class, 'index'])->name('home')->middleware('aut
 Route::get('/layouts', [SiteController::class, 'layouts'])->name('layouts')->middleware('auth');
 Route::get('/game', [SiteController::class, 'game'])->name('game')->middleware('auth');
 
+Route::get('layout', [LayoutsController::class, 'index'])->name('layout')->middleware('auth');
 Route::post('layout-store', [LayoutsController::class, 'store'])->name('layout.store')->middleware('auth');
 
 Route::get('perfil', [UserController::class, 'index'])->name('perfil')->middleware('auth');

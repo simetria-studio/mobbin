@@ -16,7 +16,7 @@ class LayoutsController extends Controller
      */
     public function index()
     {
-        //
+        return view('painel.pages.layouts');
     }
 
     /**
