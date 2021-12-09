@@ -1,0 +1,80 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 700px 300px;
+    gap: 0px 50px;
+}
+
+.video {
+    background-color: #202024;
+    display: grid;
+    grid-template-rows: 416px;
+    height: 488px;
+    border-radius: 10px;
+    .frame {
+        height: 416px;
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.area {
+    background-color: #202024;
+    display: grid;
+    grid-template-rows: 72px;
+    height: 488px;
+    border-radius: 10px;
+    .cursos {
+        background-color: #29292e;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 12px 6px 0 16px;
+    }
+    .titulo {
+        color: #fff;
+    }
+    .qt-aulas {
+        span {
+            font-size: 12px;
+            font-weight: bold;
+            margin-top: 6px;
+            color: rgb(168, 168, 179);
+        }
+    }
+    .aulas {
+        background-color: #202024;
+        padding: 4px 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        ul,
+        li,
+        a {
+            width: 100%;
+        }
+        a {
+            font-size: 14px;
+            color: #e1e1e6;
+            line-height: 30px;
+            display: block;
+            min-width: 0;
+            flex: 1;
+        }
+        a:hover {
+            background-color: #29292e;
+        }
+        li .active{
+            background-color: #29292e;
+
+        }
+    }
+    .aulas .scope {
+        display: block;
+        padding: 4px 8px 4px 0;
+        display: flex;
+        -ms-flex-direction: row;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+    }
+}
