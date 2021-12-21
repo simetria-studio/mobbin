@@ -18,9 +18,14 @@ class SiteController extends Controller
         return view('site.layouts', get_defined_vars());
 
     }
-    public function game()
+
+    public function plugins()
     {
-        return view('site.game');
+        return view('site.plugins');
     }
 
+    public function pluginDetail()
+    {
+        return view('site.plugin-detail');
+    }
 }

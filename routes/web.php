@@ -39,6 +39,8 @@ Route::get('minha-conta', [PerfilController::class, 'conta'])->name('conta');
 Route::get('/', [SiteController::class, 'index'])->name('home')->middleware('auth');
 Route::get('/layouts', [SiteController::class, 'layouts'])->name('layouts')->middleware('auth');
 Route::get('/game', [SiteController::class, 'game'])->name('game')->middleware('auth');
+Route::get('/plugins', [SiteController::class, 'plugins'])->name('plugins')->middleware('auth');
+Route::get('/plugin-detail', [SiteController::class, 'pluginDetail'])->name('plugins.detail')->middleware('auth');
 
 Route::get('layout', [LayoutsController::class, 'index'])->name('layout')->middleware('auth');
 Route::post('layout-store', [LayoutsController::class, 'store'])->name('layout.store')->middleware('auth');
@@ -53,6 +55,7 @@ Route::post('webhook', [NotifyController::class, 'webhook']);
 
 Route::post('name-alt/{id}', [UserController::class, 'nameAlt'])->name('perfil.alt.name')->middleware('auth');
 Route::post('password-alt/{id}', [UserController::class, 'password'])->name('perfil.alt.password')->middleware('auth');
+Route::post('freelance/{id}', [UserController::class, 'freelancer'])->name('perfil.alt.freelancer')->middleware('auth');
 
 
 Route::get('/vip', function () {

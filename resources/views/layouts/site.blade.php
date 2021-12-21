@@ -9,7 +9,7 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link
-        href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     {{-- <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css"> --}}
@@ -20,112 +20,33 @@
 <body>
     <div id="app">
         <header>
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-                    <a class="navbar-brand" href="{{ route('home') }}">
-                        <img src="{{ url('assets/img/newlogo.png') }}" alt="">
-                    </a>
-                    <button class="navbar-toggler menu-m" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse d-xl-flex  justify-content-sm-center "
-                        id="navbarSupportedContent">
-                        <ul class="navbar-nav ">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Jobs</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Marketplace</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Suporte</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('game') }}">Game</a>
-                            </li>
-
-                            @if (auth()->user()->permission == 10)
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('admin.home') }}">Admin</a>
-                                </li>
-                            @endif
-
-                            <li class="nav-item d-md-none mb-4 mt-2">
-                                <a href="{{ route('logout') }}" class="nav-item btn-sair">Sair</a>
-
-                            <li class="nav-item d-md-none">
-                                <a href="{{ url('/vip') }}" class="nav-link btn-sair">VIP</a>
-                            </li>
-                            <li class="nav-item d-md-none">
-                                <a href="{{ route('perfil') }}" class="nav-link btn-sair">Minha Conta</a>
-                            </li>
-                            {{-- <li class="nav-item d-md-none">
-                                <a href="{{ route('logout') }}" class="nav-link btn-sair">Sair</a>
-
-                            </li> --}}
-                        </ul>
-                        {{-- <div class="action d-none d-md-flex "></div> --}}
+            <div class="container top">
+                <div class="row custom-row">
+                    <div class="col-md-4 logo">
+                        <a href="{{ url('/') }}"> <img src="{{ url('assets/img/logo-mobbin-1.png') }}" alt=""></a>
                     </div>
+                    <div class="col-md-4 menu-top">
+                        <nav class="navbar navbar-expand-lg custom-nav">
+                            <div>
+                                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                    <div class="navbar-nav">
+                                        <a class="nav-link" href="#">Home</a>
+                                        <a class="nav-link" href="#">Plugins</a>
+                                        <a class="nav-link" href="#">Projetos</a>
+                                        <a class="nav-link" href="#">Freelancers</a>
 
-                    <div class="d-none d-xl-flex">
-                        <a href="{{ url('/vip') }}" class="btn-vip" type="button">VIP</a>
-                    </div>
-                    <div class="perfil d-none d-md-flex">
-                        <div class="dropdown">
-                            <img src="https://ui-avatars.com/api/?size=512&amp;background=ffa800&amp;color=fff&amp;name={{ auth()->user()->name }}"
-                                alt="">
-                            <div class="dropdown-content">
-                                <a href="{{ route('perfil') }}">Minha Conta</a>
-                                <a href="{{ route('logout') }}">Sair</a>
-
+                                    </div>
+                                </div>
                             </div>
-
-                        </div>
-                        </a>
-                        {{-- <a href="{{ route('logout') }}" class="btn-sair"><img
-                                src="{{ url('assets/img/sair.png') }}" alt=""></a> --}}
-                    </div>
-                </nav>
-            </div>
-            <div class="mobile">
-                <div class="mainContainer">
-                    <header>
-                        <a href="" class="close d-none">
-                            x
-                        </a>
-                        <nav class="mainMenu">
-                            <ul>
-                                <li>
-                                    <a href="{{ route('perfil') }}">Perfil</a>
-                                </li>
-                                <li>
-                                    <a href="#">Jobs</a>
-                                </li>
-                                <li>
-                                    <a href="#">Marketplace</a>
-                                </li>
-                                <li>
-                                    <a href="#">Suporte</a>
-                                </li>
-                                <li>
-                                    <a href="#">VIP</a>
-                                </li>
-                                <li>
-                                    <a href="{{ route('logout') }}" class="suBtn">Sair</a>
-                                </li>
-                            </ul>
                         </nav>
-                    </header>
-                    <div class="container">
                     </div>
-                    <footer>
-                    </footer>
+                    <div class="col-md-4">
+                        <div class="mx-auto text-center">
+                            <button class="btn my-btn">MEU PERFIL</button>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
         </header>
@@ -136,11 +57,11 @@
         <footer class="text-center mb-5">
             <div class="text-center footer-logo">
                 <a class="img-footer" href="https://simetria.studio/" target="_blank" loading="lazy">
-                    <img src="{{ url('assets/img/footer-logo.png') }}" alt="">
+                    <img src="{{ url('assets/img/flex.png') }}" alt="">
                 </a>
-                <div class="text-center politicas">
+                {{-- <div class="text-center politicas">
                     <a href="/politicas" class="btn-politicas">POLÍTICAS</a>
-                </div>
+                </div> --}}
             </div>
         </footer>
         <menu class="menu d-sm-none">
@@ -162,10 +83,12 @@
             </button>
 
             <button class="menu__item active" style="--bgColorItem: #4343f5;" onclick="home()">
-                <svg class="icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                width="24" height="24"
-                viewBox="0 0 24 24"
-                style=" fill:#000000;"><path d="M 12 2.0996094 L 1 12 L 4 12 L 4 21 L 11 21 L 11 15 L 13 15 L 13 21 L 20 21 L 20 12 L 23 12 L 12 2.0996094 z M 12 4.7910156 L 18 10.191406 L 18 11 L 18 19 L 15 19 L 15 13 L 9 13 L 9 19 L 6 19 L 6 10.191406 L 12 4.7910156 z"></path></svg>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24"
+                    viewBox="0 0 24 24" style=" fill:#000000;">
+                    <path
+                        d="M 12 2.0996094 L 1 12 L 4 12 L 4 21 L 11 21 L 11 15 L 13 15 L 13 21 L 20 21 L 20 12 L 23 12 L 12 2.0996094 z M 12 4.7910156 L 18 10.191406 L 18 11 L 18 19 L 15 19 L 15 13 L 9 13 L 9 19 L 6 19 L 6 10.191406 L 12 4.7910156 z">
+                    </path>
+                </svg>
             </button>
 
             <button class="menu__item" style="--bgColorItem: #e0b115;">

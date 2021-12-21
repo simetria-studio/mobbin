@@ -40,4 +40,14 @@ class UserController extends Controller
 
         return redirect()->back();
     }
+
+    public function freelancer(Request $request, $id)
+    {
+        $user = User::find($id);
+        $user->update([
+            'freelancer' => $request->input('freelancer'),
+        ]);
+
+        return redirect()->back();
+    }
 }

@@ -130,7 +130,7 @@
                                     </div>
                                 </section>
                             </section> --}}
-                            {{-- <section class="sc-ihsSHl jHRxGB">
+                    {{-- <section class="sc-ihsSHl jHRxGB">
                                 <section class="sc-ihsSHl dwlTEZ">
                                     <div color="" class="sc-ezipRf jEXrZm">
                                         <label for="phone">Telefone</label>
@@ -142,8 +142,8 @@
                                     </div>
                                 </section>
                             </section> --}}
-                            {{-- <button loading="0" class="sc-hmfusV gGkNIZ sc-jmdVfC ffvZkK" type="submit">Salvar</button> --}}
-                        </form>
+                    {{-- <button loading="0" class="sc-hmfusV gGkNIZ sc-jmdVfC ffvZkK" type="submit">Salvar</button> --}}
+                    </form>
                     </section>
                     {{-- acessos e conta --}}
                     <section id="section-Se" class="sc-bQltev hIbTsC">
@@ -165,6 +165,36 @@
                                 <button type="button" data-bs-toggle="modal" data-bs-target="#senha">Alterar</button>
                             </div>
                         </div>
+                        {{-- <div class="sc-heOwwK irjWcZ">
+                            <h4>CPF/CNPJ</h4>
+                            <div>
+                                <span>Não cadastrado @if (auth()->user()->cpf) @else @endif</span>
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#cpf">Preencher</button>
+                            </div>
+                        </div> --}}
+                    </section>
+                    <section id="section-Se" class="sc-bQltev hIbTsC">
+                        <div class="sc-evBfig nAwjn">
+                            <h2>Freelancer</h2>
+                            {{-- <button class="sc-eiWQhh hzwvPp">Excluir minha conta</button> --}}
+                        </div>
+                        <form action="{{ route('perfil.alt.freelancer', auth()->user()->id) }}" method="post">
+                            @csrf
+                            <div class="sc-heOwwK irjWcZ mb-3">
+                                <h4>Gostaria de se tornar freenlancer?</h4>
+                                <div>
+                                    <div class="form-check free">
+                                        <input class="form-check-input" name="freelancer" type="checkbox" value="1" id="flexCheckDefault" @if(auth()->user()->freelancer == 1) checked @endif>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Sim Gostaria
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="sc-hmfusV gGkNIZ">Confirmar</button>
+                            </div>
+                        </form>
                         {{-- <div class="sc-heOwwK irjWcZ">
                             <h4>CPF/CNPJ</h4>
                             <div>
@@ -264,9 +294,9 @@
                                                         <input name="password" type="password" id="password"
                                                             aria-label="password" placeholder="Nova senha" value=""><a
                                                             tabindex="-1" class="sc-fvFlmW hRHjch">
-                                                            <svg id="zoio" stroke="currentColor" fill="currentColor" stroke-width="0"
-                                                                viewBox="0 0 24 24" height="1em" width="1em"
-                                                                xmlns="http://www.w3.org/2000/svg">
+                                                            <svg id="zoio" stroke="currentColor" fill="currentColor"
+                                                                stroke-width="0" viewBox="0 0 24 24" height="1em"
+                                                                width="1em" xmlns="http://www.w3.org/2000/svg">
                                                                 <path
                                                                     d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z">
                                                                 </path>
@@ -289,9 +319,9 @@
                                                             id="password_confirmation" aria-label="password_confirmation"
                                                             placeholder="Confirme sua senha" value="">
                                                         <a tabindex="-1" class="sc-fvFlmW hRHjch">
-                                                            <svg id="zoio_confirm" stroke="currentColor" fill="currentColor" stroke-width="0"
-                                                                viewBox="0 0 24 24" height="1em" width="1em"
-                                                                xmlns="http://www.w3.org/2000/svg">
+                                                            <svg id="zoio_confirm" stroke="currentColor" fill="currentColor"
+                                                                stroke-width="0" viewBox="0 0 24 24" height="1em"
+                                                                width="1em" xmlns="http://www.w3.org/2000/svg">
                                                                 <path
                                                                     d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z">
                                                                 </path>

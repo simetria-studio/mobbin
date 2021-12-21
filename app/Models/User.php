@@ -22,7 +22,8 @@ class User extends Authenticatable
         'email',
         'password',
         'permission',
-        'order_id'
+        'order_id',
+        'freelancer'
     ];
 
     /**
