@@ -66,6 +66,9 @@ Route::get('/vip', function () {
 Route::get('/politicas', function () {
     return view('site.politicas');
 });
+Route::get('/curso', function () {
+    return view('site.video');
+});
 // Route::get('/me', function () {
 //     return view('site.me');
 // });
